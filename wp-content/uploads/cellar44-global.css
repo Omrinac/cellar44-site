@@ -1,0 +1,428 @@
+/* Cellar 44 Global Styles — v2 matching Stitch screenshot */
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;1,6..96,400;1,6..96,500;1,6..96,600&family=Hanken+Grotesk:wght@300;400;500;600&display=swap');
+
+:root {
+  /* Backgrounds */
+  --c44-bg-deep:      #0e0c0a;
+  --c44-bg:           #131313;
+  --c44-bg-card:      #1c1916;
+  --c44-bg-warm:      #2a1f18;
+
+  /* Brand */
+  --c44-primary:      #7a2020;
+  --c44-primary-hov:  #92282b;
+  --c44-primary-lt:   #ffb4aa;
+
+  /* Text */
+  --c44-text:         #e5e2e1;
+  --c44-text-warm:    #f0e8e0;
+  --c44-text-muted:   #b8a89a;
+  --c44-text-dim:     #9a8880;
+  --c44-accent:       #a38b88;
+
+  /* Lines */
+  --c44-border:       #3a2e28;
+  --c44-border-mid:   #2a201c;
+
+  /* Type families */
+  --c44-serif:        'Bodoni Moda', Georgia, serif;
+  --c44-sans:         'Hanken Grotesk', system-ui, sans-serif;
+
+  /* Type scale (display / heading / card / quote / stat / body / eyebrow) */
+  --c44-fs-display:   68px;
+  --c44-fs-heading:   44px;
+  --c44-fs-card:      28px;
+  --c44-fs-quote:     30px;
+  --c44-fs-stat:      56px;
+  --c44-fs-body:      15.5px;
+  --c44-fs-eyebrow:   11px;
+
+  /* Spacing rhythm */
+  --c44-section-y:    120px;
+  --c44-section-x:    96px;
+  --c44-stack-tight:  16px;
+  --c44-stack:        24px;
+  --c44-stack-loose:  40px;
+
+  /* Motion */
+  --c44-ease:         cubic-bezier(0.22, 0.61, 0.36, 1);
+  --c44-dur-reveal:   0.9s;
+  --c44-dur-hover:    0.25s;
+}
+
+@media (max-width: 1024px) {
+  :root {
+    --c44-fs-display: 52px;
+    --c44-fs-heading: 44px;
+    --c44-fs-stat:    48px;
+    --c44-section-y:  80px;
+    --c44-section-x:  40px;
+  }
+}
+@media (max-width: 767px) {
+  :root {
+    --c44-fs-display: 40px;
+    --c44-fs-heading: 32px;
+    --c44-fs-card:    24px;
+    --c44-fs-quote:   24px;
+    --c44-fs-stat:    44px;
+    --c44-section-y:  64px;
+    --c44-section-x:  24px;
+  }
+}
+
+/* Base */
+html, body { background-color: var(--c44-bg-deep) !important; }
+body * { box-sizing: border-box; }
+
+/* Elementor canvas full-width */
+.elementor-section-wrap > .elementor-container,
+.e-con { max-width: 100% !important; }
+
+/* Push content below fixed header */
+.elementor-page { padding-top: 76px !important; }
+
+/* ===== HERO ===== */
+#hero-section.e-con,
+[data-id="hero-section"] {
+  position: relative;
+  background-image:
+    linear-gradient(to right, rgba(10,6,4,0.82) 0%, rgba(10,6,4,0.45) 60%, rgba(10,6,4,0.25) 100%),
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="1" height="1"><rect fill="%231a0f0a"/></svg>');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+/* Atmosphere grid images — dark placeholder treatment */
+.atmos-img-placeholder {
+  width: 100%;
+  height: 100%;
+  min-height: 420px;
+  object-fit: cover;
+}
+
+/* Stats row — remove right border on last child */
+[data-id="stats-row"] > .e-con:last-child {
+  border-right: none !important;
+}
+[data-id="stats-row"] > .e-con:first-child {
+  border-left: none !important;
+}
+
+/* Card hover */
+[data-id^="card-"] {
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+[data-id^="card-"]:hover {
+  transform: translateY(-3px);
+  border-color: #7a2020 !important;
+}
+
+/* Atmosphere mosaic — no gap on mobile */
+@media (max-width: 767px) {
+  [data-id="atmos-grid"] {
+    flex-direction: column !important;
+  }
+  [data-id="atmos-grid"] > .e-con {
+    width: 100% !important;
+  }
+}
+
+/* CTA email row */
+[data-id="cta-email-wrap"] {
+  flex: 1;
+  min-height: 52px;
+}
+
+/* Global button transitions */
+.elementor-button {
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease !important;
+}
+
+/* Underline-style links */
+.c44-link {
+  color: var(--c44-text-muted);
+  text-decoration: none;
+  border-bottom: 1px solid var(--c44-primary);
+  padding-bottom: 2px;
+  font-family: var(--c44-sans);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: color 0.2s;
+}
+.c44-link:hover { color: var(--c44-text); }
+
+/* XPRO HEADER */
+.xpro-theme-builder-header {
+  position: fixed !important;
+  top: 0; left: 0; right: 0;
+  z-index: 9999;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  background: rgba(14,12,10,0.85) !important;
+  border-bottom: 1px solid rgba(58,46,40,0.6) !important;
+  transition: background 0.3s ease;
+}
+
+/* XPRO FOOTER */
+#xpro-theme-builder-footer {
+  background: #0a0806 !important;
+  border-top: 1px solid #3a2e28;
+}
+
+/* ===== CHEF TEAM PAGE CLASSES =====
+ * c44-arch  — rounded-arch top portrait frame (Julian / Elena)
+ * c44-glass — frosted-glass surface
+ * c44-chip  — rounded pill tag (FORAGER / SOMMELIER / …)
+ * c44-round — perfect circle frame (ensemble grid)
+ * c44-grayscale — desaturated by default, returns to colour on hover
+ */
+.c44-arch {
+    overflow: hidden;
+    aspect-ratio: 4 / 5;
+    border-radius: 1000px 1000px 0 0;
+    position: relative;
+    background: rgba(255,255,255,0.03);
+    border: 0.5px solid rgba(192,192,192,0.2);
+}
+.c44-arch img,
+.c44-arch .elementor-widget-image,
+.c44-arch .elementor-widget-image img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+    border-radius: 0 !important;
+    display: block;
+    transition: transform 0.5s cubic-bezier(0.22, 0.61, 0.36, 1),
+                filter 0.7s ease;
+    will-change: transform;
+}
+.c44-glass {
+    background: rgba(255,255,255,0.03) !important;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 0.5px solid rgba(192,192,192,0.2) !important;
+}
+.c44-glass:hover {
+    border-color: rgba(192,192,192,0.6) !important;
+    box-shadow: 0 0 15px rgba(192,192,192,0.1);
+}
+.c44-chip {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 16px;
+    border-radius: 999px;
+    background: rgba(255,255,255,0.03);
+    border: 0.5px solid rgba(192,192,192,0.3);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #c6c6c6;
+    line-height: 1;
+}
+.c44-chip + .c44-chip { margin-left: 12px; }
+/* When chips are rendered as Elementor widgets, normalise their wrappers */
+.c44-chip-row .elementor-widget-heading .elementor-heading-title { display: inline-block; }
+.c44-round,
+.c44-round .elementor-widget-container,
+.c44-round img {
+    border-radius: 50% !important;
+    overflow: hidden;
+}
+.c44-round {
+    aspect-ratio: 1 / 1;
+    background: rgba(255,255,255,0.03);
+    border: 0.5px solid rgba(192,192,192,0.2);
+    transition: border-color 0.4s ease, box-shadow 0.4s ease;
+}
+.c44-round:hover {
+    border-color: rgba(192,192,192,0.6);
+    box-shadow: 0 0 15px rgba(192,192,192,0.1);
+}
+.c44-round img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+    transition: transform 0.7s ease, filter 0.7s ease;
+}
+.c44-grayscale img { filter: grayscale(100%); }
+.c44-grayscale:hover img { filter: grayscale(0%); }
+.c44-round:hover img { transform: scale(1.1); }
+
+/* ===== STITCH HOMEPAGE UTILITY CLASSES ===== */
+/* Silver hairline used throughout the Stitch design */
+.c44-silver-hairline {
+    border: 0.5px solid rgba(192, 192, 192, 0.2) !important;
+}
+/* Vintage glow hover (used on Reservations CTA + buttons) */
+.c44-vintage-glow {
+    transition: box-shadow 0.4s ease, border-color 0.4s ease;
+}
+.c44-vintage-glow:hover {
+    box-shadow: 0 0 15px rgba(255, 180, 170, 0.2);
+    border-color: rgba(192, 192, 192, 0.5);
+}
+/* Radial vignette overlay used on hero */
+.c44-vignette {
+    position: relative;
+}
+.c44-vignette::after {
+    content: "";
+    position: absolute; inset: 0; pointer-events: none;
+    background: radial-gradient(circle, transparent 20%, rgba(19,19,19,0.9) 100%);
+}
+/* Floating quote card on Subterranean Elegance image */
+.c44-floating-quote {
+    position: absolute !important;
+    bottom: -32px;
+    left: -32px;
+    max-width: 240px;
+    z-index: 5;
+}
+@media (max-width: 1024px) {
+    .c44-floating-quote { position: static !important; bottom: auto; left: auto; max-width: 100%; margin-top: 16px; }
+}
+/* Pulse-bob on hero scroll cue */
+.c44-scroll-bounce { animation: c44-bounce 1.8s ease-in-out infinite; }
+@keyframes c44-bounce {
+    0%, 100% { transform: translateY(0); opacity: 0.55; }
+    50%      { transform: translateY(8px); opacity: 0.85; }
+}
+/* Subtle 10s slow zoom-pulse on hero bg img */
+.c44-slow-pulse { animation: c44-slow-pulse 10s ease-in-out infinite; }
+@keyframes c44-slow-pulse {
+    0%, 100% { transform: scale(1.05); opacity: 1; }
+    50%      { transform: scale(1.08); opacity: 0.92; }
+}
+/* Wine-card pill chips */
+.c44-pill {
+    display: inline-flex; align-items: center;
+    padding: 4px 12px;
+    background: rgba(19,19,19,0.3);
+    border: 0.5px solid rgba(255,180,170,0.2);
+    border-radius: 999px;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #ffb4aa;
+}
+.c44-pill + .c44-pill { margin-left: 8px; }
+/* Sommelier's Pick callout inside Seasonal Vintages card */
+.c44-callout {
+    background: rgba(255,255,255,0.05);
+    border-radius: 6px;
+    padding: 16px;
+}
+/* Reservation date form */
+.c44-rsv-form {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    max-width: 480px;
+    margin: 0 auto;
+    width: 100%;
+}
+.c44-rsv-input {
+    flex: 1 1 auto;
+    background: #131313;
+    border: 0;
+    border-bottom: 1px solid rgba(198,198,198,0.4);
+    color: #e5e2e1;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 15px;
+    padding: 12px 4px;
+    outline: none;
+    color-scheme: dark;
+    border-radius: 0 !important;
+}
+.c44-rsv-input::placeholder { color: #6e5e58; }
+.c44-rsv-input:focus { border-bottom-color: #ffb4aa; }
+.c44-rsv-msg {
+    display: block;
+    margin-top: 12px;
+    text-align: center;
+    font-size: 12px;
+    font-family: 'Hanken Grotesk', sans-serif;
+    color: #b8a89a;
+    letter-spacing: 0.04em;
+}
+@media (max-width: 640px) {
+    .c44-rsv-form { flex-direction: column; gap: 12px; }
+}
+
+/* ===== HERO SCROLL CUE ===== */
+.c44-scroll-cue .elementor-icon {
+    animation: c44-scroll-bob 2.4s ease-in-out infinite;
+    color: var(--c44-accent);
+}
+@keyframes c44-scroll-bob {
+    0%, 100% { transform: translateY(0); opacity: 0.7; }
+    50%      { transform: translateY(6px); opacity: 1; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .c44-scroll-cue .elementor-icon { animation: none; opacity: 0.85; }
+}
+/* Hero CTA row width clamp */
+.c44-hero-cta-row { max-width: 520px; }
+
+/* ===== TEAM PAGE SCROLL BG FADE ===== */
+#c44-scroll-bg-overlay {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: -1;
+    background-color: #1a0202;
+    opacity: 0;
+    transition: opacity 0.1s linear;
+}
+
+/* ===== PARALLAX FALLBACKS =====
+ * background-attachment: fixed produces jank/no-op on iOS Safari, so we
+ * downgrade it on touch/narrow viewports. Elementor's motion FX (translateY)
+ * keeps working everywhere it's enabled per-widget.
+ */
+@media (max-width: 1024px), (hover: none) {
+  #c44-hero.e-con,
+  #c44-stats.e-con,
+  [id="c44-hero"],
+  [id="c44-stats"] {
+    background-attachment: scroll !important;
+  }
+}
+
+/* Respect reduced-motion preference: kill bg-attachment + motion FX */
+@media (prefers-reduced-motion: reduce) {
+  [data-settings*="motion_fx"] {
+    transform: none !important;
+  }
+  #c44-hero.e-con,
+  #c44-stats.e-con {
+    background-attachment: scroll !important;
+  }
+  .elementor-element.animated {
+    animation: none !important;
+    opacity: 1 !important;
+  }
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  [data-id="eleg-right"],
+  [data-id="eleg-left"] { width: 100% !important; }
+  [data-id="strip-left"],
+  [data-id="strip-right"] { width: 100% !important; }
+}
+@media (max-width: 767px) {
+  [data-id="cards-row"] > .e-con { width: 100% !important; }
+  [data-id="stats-row"] { flex-direction: column !important; }
+  [data-id="stats-row"] > .e-con { border: none !important; border-bottom: 1px solid #554240 !important; padding: 24px 0 !important; }
+}

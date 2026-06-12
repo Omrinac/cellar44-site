@@ -1,0 +1,1234 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head><meta charset="UTF-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="/xmlrpc.php">
+	<title>Chef Team – Cellar 44</title>
+<meta name="robots" content="max-image-preview:large">
+    <script id="c44-header-reparent">
+    (function(){
+        function moveHeader(){
+            if (!document.body) return false;
+            var h = document.querySelector('.xpro-theme-builder-header');
+            if (!h) return false;
+            if (h.parentNode === document.body && h === document.body.firstElementChild) return true;
+            try { document.body.insertBefore(h, document.body.firstChild); } catch(e){ return false; }
+            return true;
+        }
+        // Try immediately and on every animation frame for the first ~2s,
+        // then keep a MutationObserver alive for the page lifetime so any
+        // re-injection by Xpro/Elementor gets undone instantly.
+        var t0 = (window.performance && performance.now()) || Date.now();
+        function rafTick(){
+            moveHeader();
+            var now = (window.performance && performance.now()) || Date.now();
+            if (now - t0 < 2000) requestAnimationFrame(rafTick);
+        }
+        if (document.body) moveHeader();
+        requestAnimationFrame(rafTick);
+        function startObserver(){
+            var mo = new MutationObserver(function(){ moveHeader(); });
+            mo.observe(document.documentElement, { childList: true, subtree: true });
+        }
+        if (document.body) startObserver();
+        else document.addEventListener('DOMContentLoaded', startObserver);
+    })();
+    </script>
+    <style id="c44-header-reparent-css">
+    /* If for any reason the reparent fails, force the fixed positioning
+       directly and try to opt the header out of any transformed ancestor
+       containing block via `contain: layout`. Browser-dependent, but harmless. */
+    .xpro-theme-builder-header {
+        position: fixed !important;
+        top: 0;
+        left: 0 !important;
+        right: 0 !important;
+        z-index: 9999 !important;
+    }
+    /* Respect WP admin bar offset (overrides the top:0 default above). */
+    body.admin-bar .xpro-theme-builder-header { top: 32px !important; }
+    @media screen and (max-width: 782px) {
+        body.admin-bar .xpro-theme-builder-header { top: 46px !important; }
+    }
+    body > .xpro-theme-builder-header {
+        contain: none;
+    }
+    </style>
+    <link rel="alternate" type="application/rss+xml" title="Cellar 44 » Feed" href="/feed/">
+<link rel="alternate" type="application/rss+xml" title="Cellar 44 » Comments Feed" href="/comments/feed/">
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=%2Fchef-team%2F">
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=%2Fchef-team%2F&amp;format=xml">
+<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<link rel="stylesheet" id="xpro-elementor-addons-widgets-css" href="/wp-content/plugins/xpro-elementor-addons/assets/css/xpro-widgets.css?ver=1.7.2" media="all">
+<link rel="stylesheet" id="xpro-elementor-addons-responsive-css" href="/wp-content/plugins/xpro-elementor-addons/assets/css/xpro-responsive.css?ver=1.7.2" media="all">
+<link rel="stylesheet" id="font-awesome-css" href="/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css?ver=5.15.3" media="all">
+<link rel="stylesheet" id="social-icons-css" href="/wp-content/plugins/elementor/assets/css/widget-social-icons.min.css?ver=3.28.0" media="all">
+<link rel="stylesheet" id="xpro-icons-css" href="/wp-content/plugins/xpro-elementor-addons/assets/css/xpro-icons.min.css?ver=1.0.0" media="all">
+<style id="wp-emoji-styles-inline-css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:root { --wp--style--global--content-size: 800px;--wp--style--global--wide-size: 1200px; }:where(body) { margin: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.wp-site-blocks) > * { margin-block-start: 24px; margin-block-end: 0; }:where(.wp-site-blocks) > :first-child { margin-block-start: 0; }:where(.wp-site-blocks) > :last-child { margin-block-end: 0; }:root { --wp--style--block-gap: 24px; }:root :where(.is-layout-flow) > :first-child{margin-block-start: 0;}:root :where(.is-layout-flow) > :last-child{margin-block-end: 0;}:root :where(.is-layout-flow) > *{margin-block-start: 24px;margin-block-end: 0;}:root :where(.is-layout-constrained) > :first-child{margin-block-start: 0;}:root :where(.is-layout-constrained) > :last-child{margin-block-end: 0;}:root :where(.is-layout-constrained) > *{margin-block-start: 24px;margin-block-end: 0;}:root :where(.is-layout-flex){gap: 24px;}:root :where(.is-layout-grid){gap: 24px;}.is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:root :where(.wp-block-icon svg){width: 24px;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+<link rel="stylesheet" id="cellar44-global-css" href="/wp-content/uploads/cellar44-global.css?ver=1.0.0" media="all">
+<link rel="stylesheet" id="xpro-theme-builder-css" href="/wp-content/plugins/xpro-theme-builder/assets/css/xpro-theme-builder.css?ver=1.2.11" media="all">
+<link rel="stylesheet" id="elementor-frontend-css" href="/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=4.1.1" media="all">
+<style id="elementor-frontend-inline-css">
+.elementor-kit-5{--e-global-color-primary:#7a2020;--e-global-color-secondary:#ffb4aa;--e-global-color-text:#f0e8e0;--e-global-color-accent:#a38b88;--e-global-color-c44-bg-deep:#0e0c0a;--e-global-color-c44-bg:#131313;--e-global-color-c44-bg-card:#1c1916;--e-global-color-c44-bg-warm:#2a1f18;--e-global-color-c44-primary-hov:#92282b;--e-global-color-c44-text:#e5e2e1;--e-global-color-c44-text-muted:#b8a89a;--e-global-color-c44-text-dim:#9a8880;--e-global-color-c44-border:#3a2e28;--e-global-color-c44-border-sub:#2a201c;--e-global-typography-primary-font-family:"Bodoni Moda";--e-global-typography-primary-font-size:68px;--e-global-typography-primary-font-weight:500;--e-global-typography-primary-font-style:italic;--e-global-typography-primary-line-height:1.08em;--e-global-typography-secondary-font-family:"Bodoni Moda";--e-global-typography-secondary-font-size:44px;--e-global-typography-secondary-font-weight:500;--e-global-typography-secondary-font-style:italic;--e-global-typography-secondary-line-height:1.1em;--e-global-typography-text-font-family:"Hanken Grotesk";--e-global-typography-text-font-size:15.5px;--e-global-typography-text-font-weight:400;--e-global-typography-text-line-height:1.75em;--e-global-typography-accent-font-family:"Hanken Grotesk";--e-global-typography-accent-font-size:11px;--e-global-typography-accent-font-weight:600;--e-global-typography-accent-text-transform:uppercase;--e-global-typography-accent-letter-spacing:3.2px;--e-global-typography-c44-card-title-font-family:"Bodoni Moda";--e-global-typography-c44-card-title-font-size:28px;--e-global-typography-c44-card-title-font-weight:500;--e-global-typography-c44-card-title-font-style:italic;--e-global-typography-c44-card-title-line-height:1.15em;--e-global-typography-c44-stat-number-font-family:"Bodoni Moda";--e-global-typography-c44-stat-number-font-size:56px;--e-global-typography-c44-stat-number-font-weight:500;--e-global-typography-c44-stat-number-font-style:italic;--e-global-typography-c44-stat-number-line-height:1em;--e-global-typography-c44-eyebrow-font-family:"Hanken Grotesk";--e-global-typography-c44-eyebrow-font-size:12px;--e-global-typography-c44-eyebrow-font-weight:600;--e-global-typography-c44-eyebrow-text-transform:uppercase;--e-global-typography-c44-eyebrow-letter-spacing:3.2px;--e-global-typography-c44-quote-font-family:"Bodoni Moda";--e-global-typography-c44-quote-font-size:30px;--e-global-typography-c44-quote-font-weight:500;--e-global-typography-c44-quote-font-style:italic;--e-global-typography-c44-quote-line-height:1.25em;}.elementor-section.elementor-section-boxed > .elementor-container{max-width:1140px;}.e-con{--container-max-width:1140px;}.elementor-widget:not(:last-child){margin-block-end:20px;}.elementor-element{--widgets-spacing:20px 20px;--widgets-spacing-row:20px;--widgets-spacing-column:20px;}{}h1.entry-title{display:var(--page-title-display);}.site-header .site-branding{flex-direction:column;align-items:stretch;}.site-header{padding-inline-end:0px;padding-inline-start:0px;}.site-footer .site-branding{flex-direction:column;align-items:stretch;}@media(max-width:1024px){.elementor-kit-5{--e-global-typography-primary-font-size:52px;}.elementor-section.elementor-section-boxed > .elementor-container{max-width:1024px;}.e-con{--container-max-width:1024px;}}@media(max-width:767px){.elementor-kit-5{--e-global-typography-primary-font-size:40px;--e-global-typography-secondary-font-size:32px;--e-global-typography-c44-stat-number-font-size:44px;--e-global-typography-c44-quote-font-size:24px;}.elementor-section.elementor-section-boxed > .elementor-container{max-width:767px;}.e-con{--container-max-width:767px;}}
+.e-heading-base a, .e-paragraph-base a { all: unset; cursor: pointer; }form[data-element_type="e-form"].form-state-success [data-element_type="e-form-success-message"],form[data-element_type="e-form"].form-state-error [data-element_type="e-form-error-message"]{ display: block; }
+.elementor-14 .elementor-element.elementor-element-8164b03{--display:flex;--flex-direction:column;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--align-items:center;--padding-top:140px;--padding-bottom:96px;--padding-left:96px;--padding-right:96px;}.elementor-14 .elementor-element.elementor-element-8164b03:not(.elementor-motion-effects-element-type-background), .elementor-14 .elementor-element.elementor-element-8164b03 > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:#131313;}.elementor-14 .elementor-element.elementor-element-cbaf294{--display:flex;--flex-direction:row;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--align-items:flex-end;--gap:32px 24px;--row-gap:32px;--column-gap:24px;--flex-wrap:wrap;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-14 .elementor-element.elementor-element-570c80f{--display:flex;--flex-direction:column;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--align-items:flex-start;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-widget-heading .elementor-heading-title{font-family:var( --e-global-typography-primary-font-family ), Sans-serif;font-size:var( --e-global-typography-primary-font-size );font-weight:var( --e-global-typography-primary-font-weight );font-style:var( --e-global-typography-primary-font-style );line-height:var( --e-global-typography-primary-line-height );color:var( --e-global-color-primary );}.elementor-14 .elementor-element.elementor-element-1b982eb > .elementor-widget-container{margin:0px 0px 20px 0px;}.elementor-14 .elementor-element.elementor-element-1b982eb.xpro-widget-bg-overlay:before{transition:background 0.3s;}.elementor-14 .elementor-element.elementor-element-1b982eb{text-align:start;}.elementor-14 .elementor-element.elementor-element-1b982eb .elementor-heading-title{font-family:"Hanken Grotesk", Sans-serif;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:3.2px;color:#ffb4aa;}.elementor-14 .elementor-element.elementor-element-087be1e > .elementor-widget-container{margin:0px 0px 28px 0px;}.elementor-14 .elementor-element.elementor-element-087be1e.xpro-widget-bg-overlay:before{transition:background 0.3s;}.elementor-14 .elementor-element.elementor-element-087be1e{text-align:start;}.elementor-14 .elementor-element.elementor-element-087be1e .elementor-heading-title{font-family:"Bodoni Moda", Sans-serif;font-size:72px;font-weight:600;font-style:normal;line-height:1.08em;letter-spacing:-1.4px;color:#f0e8e0;}.elementor-widget-text-editor{font-family:var( --e-global-typography-text-font-family ), Sans-serif;font-size:var( --e-global-typography-text-font-size );font-weight:var( --e-global-typography-text-font-weight );line-height:var( --e-global-typography-text-line-height );color:var( --e-global-color-text );}.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:var( --e-global-color-primary );}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap, .elementor-widget-text-editor.elementor-drop-cap-view-default .elementor-drop-cap{color:var( --e-global-color-primary );border-color:var( --e-global-color-primary );}.elementor-14 .elementor-element.elementor-element-5719473.xpro-widget-bg-overlay:before{transition:background 0.3s;}.elementor-14 .elementor-element.elementor-element-5719473{text-align:start;font-family:"Hanken Grotesk", Sans-serif;font-size:18px;font-weight:400;line-height:1.6em;color:#dcc0bd;}.elementor-14 .elementor-element.elementor-element-c2ce196{--display:flex;--flex-direction:column;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--justify-content:flex-end;--align-items:flex-end;--padding-top:0px;--padding-bottom:18px;--padding-left:0px;--padding-right:0px;}.elementor-widget-divider{--divider-color:var( --e-global-color-secondary );}.elementor-widget-divider .elementor-divider__text{color:var( --e-global-color-secondary );font-family:var( --e-global-typography-secondary-font-family ), Sans-serif;font-size:var( --e-global-typography-secondary-font-size );font-weight:var( --e-global-typography-secondary-font-weight );font-style:var( --e-global-typography-secondary-font-style );line-height:var( --e-global-typography-secondary-line-height );}.elementor-widget-divider.elementor-view-stacked .elementor-icon{background-color:var( --e-global-color-secondary );}.elementor-widget-divider.elementor-view-framed .elementor-icon, .elementor-widget-divider.elementor-view-default .elementor-icon{color:var( --e-global-color-secondary );border-color:var( --e-global-color-secondary );}.elementor-widget-divider.elementor-view-framed .elementor-icon, .elementor-widget-divider.elementor-view-default .elementor-icon svg{fill:var( --e-global-color-secondary );}.elementor-14 .elementor-element.elementor-element-dca992b{--divider-border-style:solid;--divider-color:rgba(198,198,198,0.2);--divider-border-width:1px;}.elementor-14 .elementor-element.elementor-element-dca992b.xpro-widget-bg-overlay:before{transition:background 0.3s;}.elementor-14 .elementor-element.elementor-element-dca992b .elementor-divider-separator{width:100%;margin:0 auto;margin-right:0;}.elementor-14 .elementor-element.elementor-element-dca992b .elementor-divider{text-align:right;padding-block-start:15px;padding-block-end:15px;}.elementor-14 .elementor-element.elementor-element-682ac0b{--display:flex;--flex-direction:row;--container-widget-width:initial;--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--padding-top:80px;--padding-bottom:120px;--padding-left:96px;--padding-right:96px;}.elementor-14 .elementor-element.elementor-element-682ac0b:not(.elementor-motion-effects-element-type-background), .elementor-14 .elementor-element.elementor-element-682ac0b > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:#131313;}.elementor-14 .elementor-element.elementor-element-2b2ab29{--display:flex;--flex-direction:row;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--align-items:center;--gap:48px 64px;--row-gap:48px;--column-gap:64px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-14 .elementor-element.elementor-element-800de6a{--display:flex;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-widget-image .widget-image-caption{color:var( --e-global-color-text );font-family:var( --e-global-typography-text-font-family ), Sans-serif;font-size:var( --e-global-typography-text-font-size );font-weight:var( --e-global-typography-text-font-weight );line-height:var( --e-global-typography-text-line-height );}.elementor-14 .elementor-element.elementor-element-165a3f0.xpro-widget-bg-overlay:before{transition:background 0.3s;}.elementor-14 .elementor-element.elementor-element-165a3f0{text-align:center;}.elementor-14 .elementor-element.elementor-element-972ed33{--display:flex;--flex-direction:column;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--align-items:flex-start;--gap:24px 24px;--row-gap:24px;--column-gap:24px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-14 .elementor-element.elementor-element-2a1a830 > .elementor-widget-container{margin:0px 0px 8px 0px;}.elementor-14 .elementor-element.elementor-element-2a1a830.xpro-widget-bg-overlay:before{transition:background 0.3s;}.elementor-14 .elementor-element.elementor-element-2a1a830{text-align:start;}.elementor-14 .elementor-element.elementor-element-2a1a830 .elementor-heading-title{font-family:"Hanken Grotesk", Sans-serif;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:3.2px;color:#ffb4aa;}.elementor-14 .elementor-element.elementor-element-ae5f416 > .elementor-widget-container{margin:0px 0px 0px 0px;}.elementor-14 .elementor-element.elementor-element-ae5f416.xpro-widget-bg-overlay:before{transition:background 0.3s;}.elementor-14 .elementor-element.elementor-element-ae5f416{text-align:start;}.elementor-14 .elementor-element.elementor-element-ae5f416 .elementor-heading-title{font-family:"Bodoni Moda", Sans-serif;font-size:36px;font-weight:500;font-style:italic;line-height:1.2em;color:#f0e8e0;}.elementor-14 .elementor-element.elementor-element-b2f0614.xpro-widget-bg-overlay:before{transition:background 0.3s;}.elementor-14 .elementor-element.elementor-element-b2f0614{text-align:start;font-family:"Hanken Grotesk", Sans-serif;font-size:16px;font-weight:400;line-height:1.7em;color:#dcc0bd;}.elementor-14 .elementor-element.elementor-element-e3a3d68{--display:flex;--flex-direction:row;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--justify-content:flex-start;--align-items:center;--gap:12px 12px;--row-gap:12px;--column-gap:12px;--flex-wrap:wrap;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-14 .elementor-element.elementor-element-89e9114 > .elementor-widget-container{margin:0px 10px 0px 0px;}.elementor-14 .elementor-element.elementor-element-89e9114.xpro-widget-bg-overlay:before{transition:background 0.3s;}.elementor-14 .elementor-element.elementor-element-89e9114{text-align:start;}.elementor-14 .elementor-element.elementor-element-89e9114 .elementor-heading-title{font-family:"Hanken Grotesk", Sans-serif;font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:1.6px;color:#c6c6c6;}.elementor-14 .elementor-element.elementor-element-5ab38f7 > .elementor-widget-container{margin:0px 10px 0px 0px;}.elementor-14 .elementor-element.elementor-element-5ab38f7.xpro-widget-bg-overlay:before{transition:background 0.3s;}.elementor-14 .elementor-element.elementor-element-5ab38f7{text-align:start;}.elementor-14 .elementor-element.elementor-element-5ab38f7 .elementor-heading-title{font-family:"Hanken Grotesk", Sans-serif;font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:1.6px;color:#c6c6c6;}.elementor-14 .elementor-element.elementor-element-53da045 > .elementor-widget-container{margin:0px 10px 0px 0px;}.elementor-14 .elementor-element.elementor-element-53da045.xpro-widget-bg-overlay:before{transition:background 0.3s;}.elementor-14 .elementor-element.elementor-element-53da045{text-align:start;}.elementor-14 .elementor-element.elementor-element-53da045 .elementor-heading-title{font-family:"Hanken Grotesk", Sans-serif;font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:1.6px;color:#c6c6c6;}.elementor-14 .elementor-element.elementor-element-c243071{--display:flex;--flex-direction:row;--container-widget-width:initial;--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--padding-top:80px;--padding-bottom:120px;--padding-left:96px;--padding-right:96px;}.elementor-14 .elementor-element.elementor-element-c243071:not(.elementor-motion-effects-element-type-background), .elementor-14 .elementor-element.elementor-element-c243071 > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:#131313;}.elementor-14 .elementor-element.elementor-element-707e195{--display:flex;--flex-direction:row;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--align-items:center;--gap:48px 64px;--row-gap:48px;--column-gap:64px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-14 .elementor-element.elementor-element-38e7721{--display:flex;--flex-direction:column;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--align-items:flex-end;--gap:24px 24px;--row-gap:24px;--column-gap:24px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-14 .elementor-element.elementor-element-0022938 > .elementor-widget-container{margin:0px 0px 8px 0px;}.elementor-14 .elementor-element.elementor-element-0022938.xpro-widget-bg-overlay:before{transition:background 0.3s;}.elementor-14 .elementor-element.elementor-element-0022938{text-align:end;}.elementor-14 .elementor-element.elementor-element-0022938 .elementor-heading-title{font-family:"Hanken Grotesk", Sans-serif;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:3.2px;color:#ffb4aa;}.elementor-14 .elementor-element.elementor-element-b7b1302 > .elementor-widget-container{margin:0px 0px 0px 0px;}.elementor-14 .elementor-element.elementor-element-b7b1302.xpro-widget-bg-overlay:before{transition:background 0.3s;}.elementor-14 .elementor-element.elementor-element-b7b1302{text-align:end;}.elementor-14 .elementor-element.elementor-element-b7b1302 .elementor-heading-title{font-family:"Bodoni Moda", Sans-serif;font-size:36px;font-weight:500;font-style:italic;line-height:1.2em;color:#f0e8e0;}.elementor-14 .elementor-element.elementor-element-457a6e1.xpro-widget-bg-overlay:before{transition:background 0.3s;}.elementor-14 .elementor-element.elementor-element-457a6e1{text-align:end;font-family:"Hanken Grotesk", Sans-serif;font-size:16px;font-weight:400;line-height:1.7em;color:#dcc0bd;}.elementor-14 .elementor-element.elementor-element-9cedb94{--display:flex;--flex-direction:row;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--justify-content:flex-end;--align-items:center;--gap:12px 12px;--row-gap:12px;--column-gap:12px;--flex-wrap:wrap;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-14 .elementor-element.elementor-element-83baab7 > .elementor-widget-container{margin:0px 10px 0px 0px;}.elementor-14 .elementor-element.elementor-element-83baab7.xpro-widget-bg-overlay:before{transition:background 0.3s;}.elementor-14 .elementor-element.elementor-element-83baab7{text-align:start;}.elementor-14 .elementor-element.elementor-element-83baab7 .elementor-heading-title{font-family:"Hanken Grotesk", Sans-serif;font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:1.6px;color:#c6c6c6;}.elementor-14 .elementor-element.elementor-element-153b748 > .elementor-widget-container{margin:0px 10px 0px 0px;}.elementor-14 .elementor-element.elementor-element-153b748.xpro-widget-bg-overlay:before{transition:background 0.3s;}.elementor-14 .elementor-element.elementor-element-153b748{text-align:start;}.elementor-14 .elementor-element.elementor-element-153b748 .elementor-heading-title{font-family:"Hanken Grotesk", Sans-serif;font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:1.6px;color:#c6c6c6;}.elementor-14 .elementor-element.elementor-element-b18a7d8 > .elementor-widget-container{margin:0px 10px 0px 0px;}.elementor-14 .elementor-element.elementor-element-b18a7d8.xpro-widget-bg-overlay:before{transition:background 0.3s;}.elementor-14 .elementor-element.elementor-element-b18a7d8{text-align:start;}.elementor-14 .elementor-element.elementor-element-b18a7d8 .elementor-heading-title{font-family:"Hanken Grotesk", Sans-serif;font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:1.6px;color:#c6c6c6;}.elementor-14 .elementor-element.elementor-element-b387a4b{--display:flex;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-14 .elementor-element.elementor-element-6587b1e.xpro-widget-bg-overlay:before{transition:background 0.3s;}.elementor-14 .elementor-element.elementor-element-6587b1e{text-align:center;}.elementor-14 .elementor-element.elementor-element-cecd4bd{--display:flex;--flex-direction:column;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--align-items:center;--padding-top:80px;--padding-bottom:120px;--padding-left:96px;--padding-right:96px;}.elementor-14 .elementor-element.elementor-element-cecd4bd:not(.elementor-motion-effects-element-type-background), .elementor-14 .elementor-element.elementor-element-cecd4bd > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:#131313;}.elementor-14 .elementor-element.elementor-element-faf2f83{--display:flex;--flex-direction:column;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--align-items:center;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-14 .elementor-element.elementor-element-b257f2b > .elementor-widget-container{margin:0px 0px 12px 0px;}.elementor-14 .elementor-element.elementor-element-b257f2b.xpro-widget-bg-overlay:before{transition:background 0.3s;}.elementor-14 .elementor-element.elementor-element-b257f2b{text-align:center;}.elementor-14 .elementor-element.elementor-element-b257f2b .elementor-heading-title{font-family:"Bodoni Moda", Sans-serif;font-size:26px;font-weight:500;font-style:italic;line-height:1.3em;color:#f0e8e0;}.elementor-14 .elementor-element.elementor-element-8eb0bc8{--divider-border-style:solid;--divider-color:#7a2020;--divider-border-width:2px;}.elementor-14 .elementor-element.elementor-element-8eb0bc8 > .elementor-widget-container{margin:0px 0px 56px 0px;}.elementor-14 .elementor-element.elementor-element-8eb0bc8.xpro-widget-bg-overlay:before{transition:background 0.3s;}.elementor-14 .elementor-element.elementor-element-8eb0bc8 .elementor-divider-separator{width:48px;margin:0 auto;margin-center:0;}.elementor-14 .elementor-element.elementor-element-8eb0bc8 .elementor-divider{text-align:center;padding-block-start:15px;padding-block-end:15px;}.elementor-14 .elementor-element.elementor-element-190c603{--display:flex;--flex-direction:row;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--justify-content:center;--align-items:flex-start;--gap:40px 24px;--row-gap:40px;--column-gap:24px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-14 .elementor-element.elementor-element-3e40ab6{--display:flex;--flex-direction:column;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--align-items:center;--gap:4px 4px;--row-gap:4px;--column-gap:4px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-14 .elementor-element.elementor-element-60fde11{--display:flex;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-14 .elementor-element.elementor-element-7fd57de.xpro-widget-bg-overlay:before{transition:background 0.3s;}.elementor-14 .elementor-element.elementor-element-7fd57de{text-align:center;}.elementor-14 .elementor-element.elementor-element-1cb94ba > .elementor-widget-container{margin:0px 0px 4px 0px;}.elementor-14 .elementor-element.elementor-element-1cb94ba.xpro-widget-bg-overlay:before{transition:background 0.3s;}.elementor-14 .elementor-element.elementor-element-1cb94ba{text-align:center;}.elementor-14 .elementor-element.elementor-element-1cb94ba .elementor-heading-title{font-family:"Hanken Grotesk", Sans-serif;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:1.6px;color:#f0e8e0;}.elementor-14 .elementor-element.elementor-element-d5a1641.xpro-widget-bg-overlay:before{transition:background 0.3s;}.elementor-14 .elementor-element.elementor-element-d5a1641{text-align:center;}.elementor-14 .elementor-element.elementor-element-d5a1641 .elementor-heading-title{font-family:"Hanken Grotesk", Sans-serif;font-size:13px;font-weight:400;color:#9a8880;}.elementor-14 .elementor-element.elementor-element-1cca54f{--display:flex;--flex-direction:column;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--align-items:center;--gap:4px 4px;--row-gap:4px;--column-gap:4px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-14 .elementor-element.elementor-element-5c1c1c2{--display:flex;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-14 .elementor-element.elementor-element-13a48c8.xpro-widget-bg-overlay:before{transition:background 0.3s;}.elementor-14 .elementor-element.elementor-element-13a48c8{text-align:center;}.elementor-14 .elementor-element.elementor-element-494243b > .elementor-widget-container{margin:0px 0px 4px 0px;}.elementor-14 .elementor-element.elementor-element-494243b.xpro-widget-bg-overlay:before{transition:background 0.3s;}.elementor-14 .elementor-element.elementor-element-494243b{text-align:center;}.elementor-14 .elementor-element.elementor-element-494243b .elementor-heading-title{font-family:"Hanken Grotesk", Sans-serif;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:1.6px;color:#f0e8e0;}.elementor-14 .elementor-element.elementor-element-cfdbeed.xpro-widget-bg-overlay:before{transition:background 0.3s;}.elementor-14 .elementor-element.elementor-element-cfdbeed{text-align:center;}.elementor-14 .elementor-element.elementor-element-cfdbeed .elementor-heading-title{font-family:"Hanken Grotesk", Sans-serif;font-size:13px;font-weight:400;color:#9a8880;}.elementor-14 .elementor-element.elementor-element-8d28ea2{--display:flex;--flex-direction:column;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--align-items:center;--gap:4px 4px;--row-gap:4px;--column-gap:4px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-14 .elementor-element.elementor-element-92e3695{--display:flex;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-14 .elementor-element.elementor-element-0a0c23a.xpro-widget-bg-overlay:before{transition:background 0.3s;}.elementor-14 .elementor-element.elementor-element-0a0c23a{text-align:center;}.elementor-14 .elementor-element.elementor-element-1221f98 > .elementor-widget-container{margin:0px 0px 4px 0px;}.elementor-14 .elementor-element.elementor-element-1221f98.xpro-widget-bg-overlay:before{transition:background 0.3s;}.elementor-14 .elementor-element.elementor-element-1221f98{text-align:center;}.elementor-14 .elementor-element.elementor-element-1221f98 .elementor-heading-title{font-family:"Hanken Grotesk", Sans-serif;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:1.6px;color:#f0e8e0;}.elementor-14 .elementor-element.elementor-element-546ee1e.xpro-widget-bg-overlay:before{transition:background 0.3s;}.elementor-14 .elementor-element.elementor-element-546ee1e{text-align:center;}.elementor-14 .elementor-element.elementor-element-546ee1e .elementor-heading-title{font-family:"Hanken Grotesk", Sans-serif;font-size:13px;font-weight:400;color:#9a8880;}.elementor-14 .elementor-element.elementor-element-3b4f522{--display:flex;--flex-direction:column;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--align-items:center;--gap:4px 4px;--row-gap:4px;--column-gap:4px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-14 .elementor-element.elementor-element-33f2a2f{--display:flex;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-14 .elementor-element.elementor-element-9bd32c0.xpro-widget-bg-overlay:before{transition:background 0.3s;}.elementor-14 .elementor-element.elementor-element-9bd32c0{text-align:center;}.elementor-14 .elementor-element.elementor-element-af47848 > .elementor-widget-container{margin:0px 0px 4px 0px;}.elementor-14 .elementor-element.elementor-element-af47848.xpro-widget-bg-overlay:before{transition:background 0.3s;}.elementor-14 .elementor-element.elementor-element-af47848{text-align:center;}.elementor-14 .elementor-element.elementor-element-af47848 .elementor-heading-title{font-family:"Hanken Grotesk", Sans-serif;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:1.6px;color:#f0e8e0;}.elementor-14 .elementor-element.elementor-element-6a300cf.xpro-widget-bg-overlay:before{transition:background 0.3s;}.elementor-14 .elementor-element.elementor-element-6a300cf{text-align:center;}.elementor-14 .elementor-element.elementor-element-6a300cf .elementor-heading-title{font-family:"Hanken Grotesk", Sans-serif;font-size:13px;font-weight:400;color:#9a8880;}.elementor-14 .elementor-element.elementor-element-33c31f7{--display:flex;--flex-direction:column;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--align-items:center;--padding-top:40px;--padding-bottom:140px;--padding-left:96px;--padding-right:96px;}.elementor-14 .elementor-element.elementor-element-33c31f7:not(.elementor-motion-effects-element-type-background), .elementor-14 .elementor-element.elementor-element-33c31f7 > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:#131313;}.elementor-14 .elementor-element.elementor-element-f413440{--display:flex;--flex-direction:column;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--align-items:center;--border-radius:8px 8px 8px 8px;--padding-top:96px;--padding-bottom:96px;--padding-left:96px;--padding-right:96px;}.elementor-widget-icon.elementor-view-stacked .elementor-icon{background-color:var( --e-global-color-primary );}.elementor-widget-icon.elementor-view-framed .elementor-icon, .elementor-widget-icon.elementor-view-default .elementor-icon{color:var( --e-global-color-primary );border-color:var( --e-global-color-primary );}.elementor-widget-icon.elementor-view-framed .elementor-icon, .elementor-widget-icon.elementor-view-default .elementor-icon svg{fill:var( --e-global-color-primary );}.elementor-14 .elementor-element.elementor-element-859a840 > .elementor-widget-container{margin:0px 0px 32px 0px;}.elementor-14 .elementor-element.elementor-element-859a840.xpro-widget-bg-overlay:before{transition:background 0.3s;}.elementor-14 .elementor-element.elementor-element-859a840 .elementor-icon-wrapper{text-align:center;}.elementor-14 .elementor-element.elementor-element-859a840.elementor-view-stacked .elementor-icon{background-color:#ffb4aa;}.elementor-14 .elementor-element.elementor-element-859a840.elementor-view-framed .elementor-icon, .elementor-14 .elementor-element.elementor-element-859a840.elementor-view-default .elementor-icon{color:#ffb4aa;border-color:#ffb4aa;}.elementor-14 .elementor-element.elementor-element-859a840.elementor-view-framed .elementor-icon, .elementor-14 .elementor-element.elementor-element-859a840.elementor-view-default .elementor-icon svg{fill:#ffb4aa;}.elementor-14 .elementor-element.elementor-element-859a840 .elementor-icon{font-size:40px;}.elementor-14 .elementor-element.elementor-element-859a840 .elementor-icon svg{height:40px;}.elementor-14 .elementor-element.elementor-element-68a6bcc > .elementor-widget-container{margin:0px 0px 32px 0px;}.elementor-14 .elementor-element.elementor-element-68a6bcc.xpro-widget-bg-overlay:before{transition:background 0.3s;}.elementor-14 .elementor-element.elementor-element-68a6bcc{text-align:center;}.elementor-14 .elementor-element.elementor-element-68a6bcc .elementor-heading-title{font-family:"Bodoni Moda", Sans-serif;font-size:32px;font-weight:500;font-style:italic;line-height:1.3em;color:#f0e8e0;}.elementor-14 .elementor-element.elementor-element-e1390f2 > .elementor-widget-container{margin:0px 0px 48px 0px;}.elementor-14 .elementor-element.elementor-element-e1390f2.xpro-widget-bg-overlay:before{transition:background 0.3s;}.elementor-14 .elementor-element.elementor-element-e1390f2{text-align:center;font-family:"Hanken Grotesk", Sans-serif;font-size:18px;font-weight:400;font-style:italic;line-height:1.6em;color:#dcc0bd;}.elementor-widget-button .elementor-button{background-color:var( --e-global-color-accent );font-family:var( --e-global-typography-accent-font-family ), Sans-serif;font-size:var( --e-global-typography-accent-font-size );font-weight:var( --e-global-typography-accent-font-weight );text-transform:var( --e-global-typography-accent-text-transform );letter-spacing:var( --e-global-typography-accent-letter-spacing );}.elementor-14 .elementor-element.elementor-element-98474bb .elementor-button{background-color:rgba(0,0,0,0);font-family:"Hanken Grotesk", Sans-serif;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:2.4px;fill:#c6c6c6;color:#c6c6c6;border-style:solid;border-width:1px 1px 1px 1px;border-color:rgba(198,198,198,0.4);border-radius:2px 2px 2px 2px;padding:14px 32px 14px 32px;}.elementor-14 .elementor-element.elementor-element-98474bb .elementor-button:hover, .elementor-14 .elementor-element.elementor-element-98474bb .elementor-button:focus{background-color:#c6c6c6;color:#131313;}.elementor-14 .elementor-element.elementor-element-98474bb.xpro-widget-bg-overlay:before{transition:background 0.3s;}.elementor-14 .elementor-element.elementor-element-98474bb .elementor-button:hover svg, .elementor-14 .elementor-element.elementor-element-98474bb .elementor-button:focus svg{fill:#131313;}@media(max-width:1024px){.elementor-14 .elementor-element.elementor-element-8164b03{--padding-top:120px;--padding-bottom:72px;--padding-left:40px;--padding-right:40px;}.elementor-widget-heading .elementor-heading-title{font-size:var( --e-global-typography-primary-font-size );line-height:var( --e-global-typography-primary-line-height );}.elementor-14 .elementor-element.elementor-element-087be1e .elementor-heading-title{font-size:56px;}.elementor-widget-text-editor{font-size:var( --e-global-typography-text-font-size );line-height:var( --e-global-typography-text-line-height );}.elementor-widget-divider .elementor-divider__text{font-size:var( --e-global-typography-secondary-font-size );line-height:var( --e-global-typography-secondary-line-height );}.elementor-14 .elementor-element.elementor-element-682ac0b{--padding-top:56px;--padding-bottom:80px;--padding-left:40px;--padding-right:40px;}.elementor-widget-image .widget-image-caption{font-size:var( --e-global-typography-text-font-size );line-height:var( --e-global-typography-text-line-height );}.elementor-14 .elementor-element.elementor-element-c243071{--padding-top:56px;--padding-bottom:80px;--padding-left:40px;--padding-right:40px;}.elementor-14 .elementor-element.elementor-element-cecd4bd{--padding-top:56px;--padding-bottom:80px;--padding-left:40px;--padding-right:40px;}.elementor-14 .elementor-element.elementor-element-33c31f7{--padding-top:32px;--padding-bottom:96px;--padding-left:40px;--padding-right:40px;}.elementor-14 .elementor-element.elementor-element-f413440{--padding-top:72px;--padding-bottom:72px;--padding-left:48px;--padding-right:48px;}.elementor-widget-button .elementor-button{font-size:var( --e-global-typography-accent-font-size );letter-spacing:var( --e-global-typography-accent-letter-spacing );}}@media(max-width:767px){.elementor-14 .elementor-element.elementor-element-8164b03{--padding-top:112px;--padding-bottom:56px;--padding-left:24px;--padding-right:24px;}.elementor-widget-heading .elementor-heading-title{font-size:var( --e-global-typography-primary-font-size );line-height:var( --e-global-typography-primary-line-height );}.elementor-14 .elementor-element.elementor-element-087be1e .elementor-heading-title{font-size:40px;}.elementor-widget-text-editor{font-size:var( --e-global-typography-text-font-size );line-height:var( --e-global-typography-text-line-height );}.elementor-widget-divider .elementor-divider__text{font-size:var( --e-global-typography-secondary-font-size );line-height:var( --e-global-typography-secondary-line-height );}.elementor-14 .elementor-element.elementor-element-682ac0b{--padding-top:40px;--padding-bottom:64px;--padding-left:24px;--padding-right:24px;}.elementor-widget-image .widget-image-caption{font-size:var( --e-global-typography-text-font-size );line-height:var( --e-global-typography-text-line-height );}.elementor-14 .elementor-element.elementor-element-ae5f416 .elementor-heading-title{font-size:28px;}.elementor-14 .elementor-element.elementor-element-c243071{--padding-top:40px;--padding-bottom:64px;--padding-left:24px;--padding-right:24px;}.elementor-14 .elementor-element.elementor-element-b7b1302 .elementor-heading-title{font-size:28px;}.elementor-14 .elementor-element.elementor-element-cecd4bd{--padding-top:40px;--padding-bottom:64px;--padding-left:24px;--padding-right:24px;}.elementor-14 .elementor-element.elementor-element-33c31f7{--padding-top:24px;--padding-bottom:72px;--padding-left:24px;--padding-right:24px;}.elementor-14 .elementor-element.elementor-element-f413440{--padding-top:56px;--padding-bottom:56px;--padding-left:24px;--padding-right:24px;}.elementor-14 .elementor-element.elementor-element-68a6bcc .elementor-heading-title{font-size:24px;}.elementor-widget-button .elementor-button{font-size:var( --e-global-typography-accent-font-size );letter-spacing:var( --e-global-typography-accent-letter-spacing );}}@media(min-width:768px){.elementor-14 .elementor-element.elementor-element-cbaf294{--content-width:1200px;}.elementor-14 .elementor-element.elementor-element-570c80f{--width:66.66%;}.elementor-14 .elementor-element.elementor-element-c2ce196{--width:30%;}.elementor-14 .elementor-element.elementor-element-2b2ab29{--content-width:1200px;}.elementor-14 .elementor-element.elementor-element-800de6a{--width:50%;}.elementor-14 .elementor-element.elementor-element-972ed33{--width:50%;}.elementor-14 .elementor-element.elementor-element-e3a3d68{--width:100%;}.elementor-14 .elementor-element.elementor-element-707e195{--content-width:1200px;}.elementor-14 .elementor-element.elementor-element-38e7721{--width:50%;}.elementor-14 .elementor-element.elementor-element-9cedb94{--width:100%;}.elementor-14 .elementor-element.elementor-element-b387a4b{--width:50%;}.elementor-14 .elementor-element.elementor-element-faf2f83{--content-width:1200px;}.elementor-14 .elementor-element.elementor-element-190c603{--width:100%;}.elementor-14 .elementor-element.elementor-element-3e40ab6{--width:25%;}.elementor-14 .elementor-element.elementor-element-60fde11{--width:100%;}.elementor-14 .elementor-element.elementor-element-1cca54f{--width:25%;}.elementor-14 .elementor-element.elementor-element-5c1c1c2{--width:100%;}.elementor-14 .elementor-element.elementor-element-8d28ea2{--width:25%;}.elementor-14 .elementor-element.elementor-element-92e3695{--width:100%;}.elementor-14 .elementor-element.elementor-element-3b4f522{--width:25%;}.elementor-14 .elementor-element.elementor-element-33f2a2f{--width:100%;}.elementor-14 .elementor-element.elementor-element-f413440{--content-width:1100px;}}@media(max-width:1024px) and (min-width:768px){.elementor-14 .elementor-element.elementor-element-570c80f{--width:100%;}.elementor-14 .elementor-element.elementor-element-c2ce196{--width:100%;}.elementor-14 .elementor-element.elementor-element-800de6a{--width:100%;}.elementor-14 .elementor-element.elementor-element-972ed33{--width:100%;}.elementor-14 .elementor-element.elementor-element-38e7721{--width:100%;}.elementor-14 .elementor-element.elementor-element-b387a4b{--width:100%;}.elementor-14 .elementor-element.elementor-element-3e40ab6{--width:50%;}.elementor-14 .elementor-element.elementor-element-1cca54f{--width:50%;}.elementor-14 .elementor-element.elementor-element-8d28ea2{--width:50%;}.elementor-14 .elementor-element.elementor-element-3b4f522{--width:50%;}}
+.elementor-22 .elementor-element.elementor-element-8a0114f{--display:flex;--flex-direction:row;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--align-items:stretch;--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-22 .elementor-element.elementor-element-381a5e3{--display:flex;--min-height:100px;--flex-direction:row;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--justify-content:space-between;--align-items:center;--gap:16px 24px;--row-gap:16px;--column-gap:24px;--flex-wrap:nowrap;--padding-top:0%;--padding-bottom:0%;--padding-left:0%;--padding-right:0%;}.elementor-22 .elementor-element.elementor-element-d4b3a68.xpro-widget-bg-overlay:before{transition:background 0.3s;}.elementor-22 .elementor-element.elementor-element-d4b3a68 .xpro-site-logo img{width:45%;opacity:1;}.elementor-22 .elementor-element.elementor-element-43e9ca9.elementor-widget-xpro-horizontal-menu{text-align:center;}.elementor-22 .elementor-element.elementor-element-43e9ca9 .xpro-elementor-horizontal-navbar-nav{justify-content:center;}.elementor-22 .elementor-element.elementor-element-43e9ca9.xpro-widget-bg-overlay:before{transition:background 0.3s;}.elementor-22 .elementor-element.elementor-element-43e9ca9 .xpro-elementor-horizontal-navbar-nav > li > a{font-family:"Hanken Grotesk", Sans-serif;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:1.8px;color:#b8a89a;}.elementor-22 .elementor-element.elementor-element-43e9ca9 .xpro-elementor-horizontal-navbar-nav > li:hover > a{color:#f0e8e0;}.elementor-22 .elementor-element.elementor-element-43e9ca9 button.xpro-elementor-horizontal-menu-toggler{font-size:25px;height:40px;width:40px;color:var( --e-global-color-text );}.elementor-22 .elementor-element.elementor-element-43e9ca9 button.xpro-elementor-horizontal-menu-toggler > svg{width:25px;}.elementor-22 .elementor-element.elementor-element-43e9ca9 button.xpro-elementor-horizontal-menu-close{font-size:20px;height:40px;width:40px;color:var( --e-global-color-secondary );background-color:var( --e-global-color-c44-bg-deep );}.elementor-22 .elementor-element.elementor-element-43e9ca9 button.xpro-elementor-horizontal-menu-close > svg{width:20px;}.elementor-widget-xpro-button .xpro-elementor-button .xpro-button-text{font-family:var( --e-global-typography-accent-font-family ), Sans-serif;font-size:var( --e-global-typography-accent-font-size );font-weight:var( --e-global-typography-accent-font-weight );text-transform:var( --e-global-typography-accent-text-transform );letter-spacing:var( --e-global-typography-accent-letter-spacing );}.elementor-22 .elementor-element.elementor-element-07af8e3 .xpro-elementor-button,.elementor-22 .elementor-element.elementor-element-07af8e3 .xpro-elementor-button-hover-style-skewFill:before,
+								.elementor-22 .elementor-element.elementor-element-07af8e3 .xpro-elementor-button-hover-style-flipSlide::before{background-color:#7a2020;}.elementor-22 .elementor-element.elementor-element-07af8e3 .xpro-elementor-button-animation-none:hover,.elementor-22 .elementor-element.elementor-element-07af8e3 .xpro-button-2d-animation:hover,
+								.elementor-22 .elementor-element.elementor-element-07af8e3 .xpro-button-bg-animation::before,.elementor-22 .elementor-element.elementor-element-07af8e3 .xpro-elementor-button-hover-style-bubbleFromDown::before,
+								.elementor-22 .elementor-element.elementor-element-07af8e3 .xpro-elementor-button-hover-style-bubbleFromDown::after,.elementor-22 .elementor-element.elementor-element-07af8e3 .xpro-elementor-button-hover-style-bubbleFromCenter::before,
+								.elementor-22 .elementor-element.elementor-element-07af8e3 .xpro-elementor-button-hover-style-bubbleFromCenter::after,.elementor-22 .elementor-element.elementor-element-07af8e3 .xpro-elementor-button-hover-style-flipSlide,
+								.elementor-22 .elementor-element.elementor-element-07af8e3 [class*=xpro-elementor-button-hover-style-underline]:hover,.elementor-22 .elementor-element.elementor-element-07af8e3 .xpro-elementor-button-hover-style-skewFill,
+								
+								.elementor-22 .elementor-element.elementor-element-07af8e3 .xpro-elementor-button-animation-none:focus,.elementor-22 .elementor-element.elementor-element-07af8e3 .xpro-button-2d-animation:focus,
+								.elementor-22 .elementor-element.elementor-element-07af8e3 [class*=xpro-elementor-button-focus-style-underline]:focus{background-color:#92282b;}.elementor-22 .elementor-element.elementor-element-07af8e3.xpro-widget-bg-overlay:before{transition:background 0.3s;}.elementor-22 .elementor-element.elementor-element-07af8e3 .xpro-elementor-button .xpro-button-text{font-family:"Hanken Grotesk", Sans-serif;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:2.2px;}.elementor-22 .elementor-element.elementor-element-07af8e3 .xpro-elementor-button{color:#ffffff;}.elementor-22 .elementor-element.elementor-element-07af8e3 .xpro-elementor-button svg{color:#ffffff;}.elementor-22 .elementor-element.elementor-element-07af8e3 .xpro-elementor-button:hover, .elementor-22 .elementor-element.elementor-element-07af8e3 .xpro-elementor-button:focus{color:#ffffff;}.elementor-22 .elementor-element.elementor-element-07af8e3 .xpro-elementor-button:hover svg, .elementor-22 .elementor-element.elementor-element-07af8e3 .xpro-elementor-button:focus svg{fill:#ffffff;}@media(max-width:1024px){.elementor-22 .elementor-element.elementor-element-43e9ca9 .xpro-elementor-horizontal-menu-responsive-tablet{width:400px;} .elementor-22 .elementor-element.elementor-element-43e9ca9 .xpro-elementor-horizontal-menu-responsive-tablet{background-color:var( --e-global-color-c44-bg-deep );} .elementor-22 .elementor-element.elementor-element-43e9ca9 .xpro-elementor-horizontal-menu-overlay{background-color:#00000069;} .elementor-22 .elementor-element.elementor-element-43e9ca9 .xpro-elementor-horizontal-menu-responsive-tablet .xpro-elementor-horizontal-navbar-nav > li > a{color:var( --e-global-color-text );background:var( --e-global-color-c44-bg-deep );border-bottom-color:#e6e6e6;} .elementor-22 .elementor-element.elementor-element-43e9ca9 .xpro-elementor-horizontal-menu-responsive-tablet .xpro-elementor-horizontal-navbar-nav > li.current-menu-item > a{color:#2b2b2b;background:#f5f5f5;} .elementor-22 .elementor-element.elementor-element-43e9ca9 .xpro-elementor-horizontal-menu-responsive-tablet .xpro-elementor-dropdown-menu > li > a{color:#a2a2a2;background:var( --e-global-color-c44-bg-deep );} .elementor-22 .elementor-element.elementor-element-43e9ca9 .xpro-elementor-horizontal-menu-responsive-tablet .xpro-elementor-horizontal-navbar .xpro-elementor-dropdown-menu > li > a{border-bottom-width:1px;border-bottom-color:#ffffff69;} .elementor-22 .elementor-element.elementor-element-43e9ca9 .xpro-elementor-horizontal-menu-responsive-tablet .xpro-elementor-dropdown-menu > li.current-menu-item > a{color:#2b2b2b;background:#efefef;}.elementor-widget-xpro-button .xpro-elementor-button .xpro-button-text{font-size:var( --e-global-typography-accent-font-size );letter-spacing:var( --e-global-typography-accent-letter-spacing );}}@media(min-width:768px){.elementor-22 .elementor-element.elementor-element-381a5e3{--content-width:1240px;}}@media(max-width:767px){.elementor-22 .elementor-element.elementor-element-381a5e3{--padding-top:14px;--padding-bottom:14px;--padding-left:20px;--padding-right:20px;}.elementor-22 .elementor-element.elementor-element-43e9ca9.elementor-element{--order:3;}.elementor-22 .elementor-element.elementor-element-43e9ca9 .xpro-elementor-horizontal-menu-responsive-mobile{width:400px;} .elementor-22 .elementor-element.elementor-element-43e9ca9 .xpro-elementor-horizontal-menu-responsive-mobile{background-color:var( --e-global-color-c44-bg-deep );} .elementor-22 .elementor-element.elementor-element-43e9ca9 .xpro-elementor-horizontal-menu-overlay{background-color:#00000069;} .elementor-22 .elementor-element.elementor-element-43e9ca9 .xpro-elementor-horizontal-menu-responsive-mobile .xpro-elementor-horizontal-navbar-nav > li > a{color:var( --e-global-color-text );background:var( --e-global-color-c44-bg-deep );border-bottom-color:#e6e6e6;} .elementor-22 .elementor-element.elementor-element-43e9ca9 .xpro-elementor-horizontal-menu-responsive-mobile .xpro-elementor-horizontal-navbar-nav > li.current-menu-item > a{color:#2b2b2b;background:#f5f5f5;} .elementor-22 .elementor-element.elementor-element-43e9ca9 .xpro-elementor-horizontal-menu-responsive-mobile .xpro-elementor-dropdown-menu > li > a{color:#a2a2a2;background:var( --e-global-color-c44-bg-deep );} .elementor-22 .elementor-element.elementor-element-43e9ca9 .xpro-elementor-horizontal-menu-responsive-mobile .xpro-elementor-horizontal-navbar .xpro-elementor-dropdown-menu > li > a{border-bottom-width:1px;border-bottom-color:#ffffff69;} .elementor-22 .elementor-element.elementor-element-43e9ca9 .xpro-elementor-horizontal-menu-responsive-mobile .xpro-elementor-dropdown-menu > li.current-menu-item > a{color:#2b2b2b;background:#efefef;}.elementor-widget-xpro-button .xpro-elementor-button .xpro-button-text{font-size:var( --e-global-typography-accent-font-size );letter-spacing:var( --e-global-typography-accent-letter-spacing );}}
+.elementor-23 .elementor-element.elementor-element-78ce585{--display:flex;--flex-direction:row;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--align-items:flex-start;--padding-top:80px;--padding-bottom:48px;--padding-left:40px;--padding-right:40px;}.elementor-23 .elementor-element.elementor-element-78ce585:not(.elementor-motion-effects-element-type-background), .elementor-23 .elementor-element.elementor-element-78ce585 > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:#0a0806;}.elementor-23 .elementor-element.elementor-element-4775f1b{--display:flex;--flex-direction:row;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--align-items:flex-start;--gap:40px 32px;--row-gap:40px;--column-gap:32px;--flex-wrap:wrap;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-23 .elementor-element.elementor-element-bc946d3{--display:flex;--flex-direction:column;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--align-items:flex-start;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:16px;}.elementor-23 .elementor-element.elementor-element-8069799{width:var( --container-widget-width, 31% );max-width:31%;--container-widget-width:31%;--container-widget-flex-grow:0;}.elementor-23 .elementor-element.elementor-element-8069799.xpro-widget-bg-overlay:before{transition:background 0.3s;}.elementor-widget-text-editor{font-family:var( --e-global-typography-text-font-family ), Sans-serif;font-size:var( --e-global-typography-text-font-size );font-weight:var( --e-global-typography-text-font-weight );line-height:var( --e-global-typography-text-line-height );color:var( --e-global-color-text );}.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:var( --e-global-color-primary );}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap, .elementor-widget-text-editor.elementor-drop-cap-view-default .elementor-drop-cap{color:var( --e-global-color-primary );border-color:var( --e-global-color-primary );}.elementor-23 .elementor-element.elementor-element-00b5a3c > .elementor-widget-container{margin:16px 0px 24px 0px;}.elementor-23 .elementor-element.elementor-element-00b5a3c.xpro-widget-bg-overlay:before{transition:background 0.3s;}.elementor-23 .elementor-element.elementor-element-00b5a3c{text-align:start;font-family:"Hanken Grotesk", Sans-serif;font-size:14px;font-weight:400;line-height:1.7em;color:#9a8880;}.elementor-23 .elementor-element.elementor-element-98c1ed8{--display:flex;--flex-direction:column;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--align-items:flex-start;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-23 .elementor-element.elementor-element-fc3455b > .elementor-widget-container{margin:0px 0px 20px 0px;}.elementor-23 .elementor-element.elementor-element-fc3455b.xpro-widget-bg-overlay:before{transition:background 0.3s;}.elementor-23 .elementor-element.elementor-element-fc3455b .xpro-heading-title{font-family:"Hanken Grotesk", Sans-serif;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:3.2px;color:var( --e-global-color-text );}.elementor-23 .elementor-element.elementor-element-fc3455b .xpro-title-focus{color:var( --e-global-color-secondary );}.elementor-23 .elementor-element.elementor-element-e5541c0.xpro-widget-bg-overlay:before{transition:background 0.3s;}.elementor-23 .elementor-element.elementor-element-e5541c0{text-align:start;font-family:"Hanken Grotesk", Sans-serif;font-size:14px;font-weight:400;line-height:1.85em;color:#b8a89a;}.elementor-23 .elementor-element.elementor-element-1a96405{--display:flex;--flex-direction:column;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--align-items:flex-start;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-23 .elementor-element.elementor-element-7723f28 > .elementor-widget-container{margin:0px 0px 20px 0px;}.elementor-23 .elementor-element.elementor-element-7723f28.xpro-widget-bg-overlay:before{transition:background 0.3s;}.elementor-23 .elementor-element.elementor-element-7723f28 .xpro-heading-title{font-family:"Hanken Grotesk", Sans-serif;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:3.2px;color:var( --e-global-color-text );}.elementor-23 .elementor-element.elementor-element-7723f28 .xpro-title-focus{color:var( --e-global-color-secondary );}.elementor-23 .elementor-element.elementor-element-24b2eac.xpro-widget-bg-overlay:before{transition:background 0.3s;}.elementor-23 .elementor-element.elementor-element-24b2eac{text-align:start;font-family:"Hanken Grotesk", Sans-serif;font-size:14px;font-weight:400;line-height:1.85em;color:#b8a89a;}.elementor-23 .elementor-element.elementor-element-32c77e5{--display:flex;--flex-direction:column;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--align-items:flex-start;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-23 .elementor-element.elementor-element-99dcd62 > .elementor-widget-container{margin:0px 0px 20px 0px;}.elementor-23 .elementor-element.elementor-element-99dcd62.xpro-widget-bg-overlay:before{transition:background 0.3s;}.elementor-23 .elementor-element.elementor-element-99dcd62 .xpro-heading-title{font-family:"Hanken Grotesk", Sans-serif;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:3.2px;color:var( --e-global-color-text );}.elementor-23 .elementor-element.elementor-element-31a4d33.xpro-widget-bg-overlay:before{transition:background 0.3s;}.elementor-23 .elementor-element.elementor-element-31a4d33{text-align:start;font-family:"Hanken Grotesk", Sans-serif;font-size:14px;font-weight:400;line-height:1.85em;color:#b8a89a;}.elementor-23 .elementor-element.elementor-element-9acaeb1{--display:flex;--flex-direction:row;--container-widget-width:initial;--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;border-style:solid;--border-style:solid;border-width:1px 0px 0px 0px;--border-top-width:1px;--border-right-width:0px;--border-bottom-width:0px;--border-left-width:0px;border-color:#3a2e28;--border-color:#3a2e28;--padding-top:24px;--padding-bottom:32px;--padding-left:40px;--padding-right:40px;}.elementor-23 .elementor-element.elementor-element-9acaeb1:not(.elementor-motion-effects-element-type-background), .elementor-23 .elementor-element.elementor-element-9acaeb1 > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:#0a0806;}.elementor-23 .elementor-element.elementor-element-5f3ab95{--display:flex;--flex-direction:row;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--justify-content:space-between;--align-items:center;--gap:8px 16px;--row-gap:8px;--column-gap:16px;--flex-wrap:wrap;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px;}.elementor-23 .elementor-element.elementor-element-973d067.xpro-widget-bg-overlay:before{transition:background 0.3s;}.elementor-23 .elementor-element.elementor-element-973d067{text-align:start;font-family:"Hanken Grotesk", Sans-serif;font-size:12px;font-weight:400;letter-spacing:0.6px;color:#9a8880;}.elementor-23 .elementor-element.elementor-element-1c9167a.xpro-widget-bg-overlay:before{transition:background 0.3s;}.elementor-23 .elementor-element.elementor-element-1c9167a{text-align:end;font-family:"Hanken Grotesk", Sans-serif;font-size:12px;font-weight:400;letter-spacing:0.6px;color:#9a8880;}@media(max-width:1024px){.elementor-widget-text-editor{font-size:var( --e-global-typography-text-font-size );line-height:var( --e-global-typography-text-line-height );}}@media(min-width:768px){.elementor-23 .elementor-element.elementor-element-4775f1b{--content-width:1200px;}.elementor-23 .elementor-element.elementor-element-bc946d3{--width:34%;}.elementor-23 .elementor-element.elementor-element-98c1ed8{--width:22%;}.elementor-23 .elementor-element.elementor-element-1a96405{--width:22%;}.elementor-23 .elementor-element.elementor-element-32c77e5{--width:22%;}.elementor-23 .elementor-element.elementor-element-5f3ab95{--content-width:1200px;}}@media(max-width:1024px) and (min-width:768px){.elementor-23 .elementor-element.elementor-element-bc946d3{--width:100%;}.elementor-23 .elementor-element.elementor-element-98c1ed8{--width:50%;}.elementor-23 .elementor-element.elementor-element-1a96405{--width:50%;}.elementor-23 .elementor-element.elementor-element-32c77e5{--width:100%;}}@media(max-width:767px){.elementor-23 .elementor-element.elementor-element-78ce585{--padding-top:56px;--padding-bottom:32px;--padding-left:24px;--padding-right:24px;}.elementor-widget-text-editor{font-size:var( --e-global-typography-text-font-size );line-height:var( --e-global-typography-text-line-height );}.elementor-23 .elementor-element.elementor-element-9acaeb1{--padding-top:20px;--padding-bottom:24px;--padding-left:24px;--padding-right:24px;}}
+/*# sourceURL=elementor-frontend-inline-css */
+</style>
+<link rel="stylesheet" id="xpro-elementor-widgetarea-editor-css" href="/wp-content/plugins/xpro-elementor-addons/inc/controls/assets/css/widgetarea-editor.css?ver=1.7.2" media="all">
+<link rel="stylesheet" id="e-animation-fadeInUp-css" href="/wp-content/plugins/elementor/assets/lib/animations/styles/fadeInUp.min.css?ver=4.1.1" media="all">
+<link rel="stylesheet" id="widget-heading-css" href="/wp-content/plugins/elementor/assets/css/widget-heading.min.css?ver=4.1.1" media="all">
+<link rel="stylesheet" id="widget-divider-css" href="/wp-content/plugins/elementor/assets/css/widget-divider.min.css?ver=4.1.1" media="all">
+<link rel="stylesheet" id="widget-image-css" href="/wp-content/plugins/elementor/assets/css/widget-image.min.css?ver=4.1.1" media="all">
+<link rel="stylesheet" id="base-desktop-css" href="/wp-content/uploads/elementor/css/base-desktop.css?ver=6a2c18aa6d167" media="all">
+<link rel="stylesheet" id="hello-elementor-css" href="/wp-content/themes/hello-elementor/assets/css/reset.css?ver=3.4.9" media="all">
+<link rel="stylesheet" id="hello-elementor-theme-style-css" href="/wp-content/themes/hello-elementor/assets/css/theme.css?ver=3.4.9" media="all">
+<link rel="stylesheet" id="hello-elementor-header-footer-css" href="/wp-content/themes/hello-elementor/assets/css/header-footer.css?ver=3.4.9" media="all">
+<link rel="stylesheet" id="elementor-gf-bodonimoda-css" href="https://fonts.googleapis.com/css?family=Bodoni+Moda:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&amp;display=swap" media="all">
+<link rel="stylesheet" id="elementor-gf-hankengrotesk-css" href="https://fonts.googleapis.com/css?family=Hanken+Grotesk:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&amp;display=swap" media="all">
+<script id="jquery-core-js" src="/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
+<script id="jquery-migrate-js" src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"></script>
+<link rel="https://api.w.org/" href="/wp-json/"><link rel="alternate" title="JSON" type="application/json" href="/wp-json/wp/v2/pages/14"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd">
+<meta name="generator" content="WordPress 7.0">
+<link rel="canonical" href="/chef-team/">
+<link rel="shortlink" href="/?p=14">
+<style>body { background-color: #131313 !important; }</style><style id="c44-parallax-css">
+.c44-parallax { will-change: transform; }
+.c44-reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.9s cubic-bezier(0.22, 0.61, 0.36, 1),
+                transform 0.9s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.c44-reveal.c44-revealed { opacity: 1; transform: translateY(0); }
+/* Editor-iframe safety net: if Elementor ever adds these body classes,
+ * force visibility regardless of JS handler state. */
+body.elementor-editor-active .c44-reveal,
+body.elementor-editor-preview .c44-reveal,
+.elementor-editor-active .c44-reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+}
+@media (prefers-reduced-motion: reduce) {
+    .c44-parallax { transform: none !important; }
+    .c44-reveal { opacity: 1 !important; transform: none !important; transition: none !important; }
+}
+</style>
+<link rel="icon" href="/wp-content/uploads/2026/06/cellar44-pouring-150x150.jpg" sizes="32x32">
+<link rel="icon" href="/wp-content/uploads/2026/06/cellar44-pouring.jpg" sizes="192x192">
+<link rel="apple-touch-icon" href="/wp-content/uploads/2026/06/cellar44-pouring.jpg">
+<meta name="msapplication-TileImage" content="/wp-content/uploads/2026/06/cellar44-pouring.jpg">
+<style>
+/* === CELLAR 44 HEADER === */
+.xpro-theme-builder-header {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  background: rgba(19,19,19,0.88) !important;
+  border-bottom: 1px solid rgba(192,192,192,0.08);
+  transition: background 0.3s ease;
+}
+/* Always vertically centre the header content + lock a stable height so the
+   wordmark never drifts up or down relative to the bar. */
+.xpro-theme-builder-header,
+.xpro-theme-builder-header .elementor-location-header,
+.xpro-theme-builder-header .elementor-element-c44-header-bar,
+.xpro-theme-builder-header .elementor-element-c44-header-inner {
+  align-items: center !important;
+}
+.xpro-theme-builder-header .elementor-element-c44-header-inner {
+  min-height: 72px;
+}
+.c44-header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+/* When the WP admin bar is showing, slide the fixed header down by its height
+   so the two bars don't fight for the same top-of-viewport pixels. */
+body.admin-bar .xpro-theme-builder-header { top: 32px; }
+@media screen and (max-width: 782px) {
+  body.admin-bar .xpro-theme-builder-header { top: 46px; }
+}
+/* Push page content below fixed header — but NOT on pages whose first
+   section is a full-viewport hero. Those want the header to overlay the
+   photo (Stitch-style) so the centred hero content sits in the middle of
+   the viewport, not 76 px below it. */
+body.has-xpro-header .elementor-location-header + * {
+  padding-top: 76px;
+}
+.elementor-page {
+  padding-top: 76px;
+}
+/* Home page: hero is min-height:100vh, must start at viewport top */
+body.home.page-id-10,
+body.home.page-id-10 main.site-main {
+  padding-top: 0 !important;
+}
+body.has-xpro-header.page-id-10 .elementor-location-header + * {
+  padding-top: 0;
+}
+/* Scrolled state: SHRINK the header so it stops taking so much real estate
+   (Stitch design pattern). Both paddings come down + min-height collapses,
+   so content stays centred but the bar itself is more compact and the menu
+   reads as sitting higher in the viewport. */
+body.c44-scrolled .xpro-theme-builder-header {
+  background: rgba(14,12,10,0.94) !important;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.35);
+}
+body.c44-scrolled .xpro-theme-builder-header .elementor-element-c44-header-inner {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  min-height: 56px !important;
+}
+.xpro-theme-builder-header,
+.xpro-theme-builder-header .elementor-element-c44-header-inner {
+  transition: padding 0.25s ease, min-height 0.25s ease, background 0.25s ease;
+}
+/* Footer */
+#xpro-theme-builder-footer {
+  background: #0e0e0e;
+  border-top: 1px solid #554240;
+}
+/* === END CELLAR 44 HEADER === */
+    </style><script>
+(function () {
+    var threshold = 50;
+    var raf = null;
+    function tick() {
+        document.body.classList.toggle("c44-scrolled", window.scrollY > threshold);
+        raf = null;
+    }
+    function onScroll() { if (raf === null) raf = window.requestAnimationFrame(tick); }
+    window.addEventListener("scroll", onScroll, { passive: true });
+    document.addEventListener("DOMContentLoaded", tick);
+})();
+</script><style>
+/* Cellar 44 — email signup row */
+.c44-email-form {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  margin: 0;
+  position: relative;
+}
+.c44-email-input {
+  flex: 1 1 auto;
+  background: #1c1916;
+  border: 1px solid #3a2e28;
+  border-right: none;
+  border-radius: 2px 0 0 2px;
+  color: #e5e2e1;
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 14px;
+  padding: 14px 18px;
+  outline: none;
+  min-width: 0;
+}
+.c44-email-input::placeholder { color: #6e5e58; }
+.c44-email-input:focus { border-color: #7a2020; }
+.c44-email-msg {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 10px;
+  font-size: 12px;
+  color: #b8a89a;
+  font-family: 'Hanken Grotesk', sans-serif;
+  letter-spacing: 0.04em;
+}
+/* Lock the Join button right against the input */
+#c44-cta-submit {
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+[data-id="c44-cta-form-row"] {
+  gap: 0 !important;
+}
+[data-id="c44-cta-form-row"] > .e-con-inner > .elementor-element-cta-email,
+[data-id="c44-cta-form-row"] .elementor-shortcode {
+  width: 100%;
+}
+@media (max-width: 600px) {
+  [data-id="c44-cta-form-row"] { flex-direction: column !important; }
+  .c44-email-input { border-right: 1px solid #3a2e28 !important; border-radius: 2px !important; }
+  #c44-cta-submit { border-radius: 2px !important; margin-top: 8px !important; }
+}
+</style>
+<style>
+        body.cellar44 main.site-main,
+        body main.site-main {
+            max-width: none !important;
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+        body main.site-main > .page-content,
+        body main.site-main > .page-content > .elementor {
+            max-width: none !important;
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+        body .page-header { display: none !important; }
+        /* Make sure the Xpro header sits above the page content */
+        body { padding-top: 0 !important; }
+    </style>    <style id="c44-gentle-images-css">
+    /* Kill the scroll-linked parallax transform on every c44-parallax
+       element inside #c44-atmosphere. Wins against the inline transform
+       set by the parallax JS via !important. */
+    #c44-atmosphere [class*="c44-parallax"] {
+        transform: none !important;
+        will-change: auto !important;
+    }
+    /* Gentle one-time reveal: fade + tiny scale-up over ~1.2s. */
+    #c44-atmosphere [class*="c44-parallax"] {
+        opacity: 0;
+        transform: scale(1.015) translateY(10px) !important;
+        transition: opacity 1.2s cubic-bezier(0.22, 0.61, 0.36, 1),
+                    transform 1.2s cubic-bezier(0.22, 0.61, 0.36, 1) !important;
+    }
+    #c44-atmosphere [class*="c44-parallax"].c44-gentle-in {
+        opacity: 1;
+        transform: scale(1) translateY(0) !important;
+    }
+    @media (prefers-reduced-motion: reduce) {
+        #c44-atmosphere [class*="c44-parallax"] {
+            opacity: 1 !important;
+            transform: none !important;
+            transition: none !important;
+        }
+    }
+    </style>
+        <style id="c44-candle-cursor-css">
+    .the_atmosphere, #c44-atmosphere {
+        position: relative;
+    }
+    @media (hover: hover) and (pointer: fine) {
+        .the_atmosphere, #c44-atmosphere { cursor: none; }
+        .the_atmosphere *, #c44-atmosphere * { cursor: none !important; }
+    }
+    .c44-candle-glow,
+    .c44-candle-trail,
+    .c44-candle-core {
+        position: fixed;
+        pointer-events: none;
+        border-radius: 50%;
+        top: 0;
+        left: 0;
+        z-index: 999999;
+        opacity: 0;
+        transition: opacity 0.35s ease;
+    }
+    .c44-candle-glow {
+        width: 180px;
+        height: 180px;
+        margin-left: -90px;
+        margin-top: -90px;
+        background: radial-gradient(
+            circle at center,
+            rgba(255, 200, 110, 0.75) 0%,
+            rgba(255, 160, 60, 0.45) 20%,
+            rgba(255, 120, 40, 0.22) 45%,
+            rgba(255, 100, 40, 0.05) 70%,
+            rgba(255, 100, 40, 0) 88%
+        );
+        filter: blur(1px);
+    }
+    .c44-candle-glow.c44-on { opacity: 1; }
+    .c44-candle-core {
+        width: 14px;
+        height: 14px;
+        margin-left: -7px;
+        margin-top: -7px;
+        background: radial-gradient(circle, rgba(255,240,190,1) 0%, rgba(255,190,90,0.8) 50%, rgba(255,170,80,0) 100%);
+        box-shadow: 0 0 12px 4px rgba(255, 180, 80, 0.6);
+    }
+    .c44-candle-core.c44-on { opacity: 1; }
+    .c44-candle-trail {
+        width: 70px;
+        height: 70px;
+        margin-left: -35px;
+        margin-top: -35px;
+        background: radial-gradient(
+            circle at center,
+            rgba(255, 180, 100, 0.55) 0%,
+            rgba(255, 140, 60, 0.25) 35%,
+            rgba(255, 120, 40, 0) 75%
+        );
+        filter: blur(2px);
+        opacity: 0.9;
+        animation: c44CandleTrail 700ms ease-out forwards;
+    }
+    @keyframes c44CandleTrail {
+        0%   { opacity: 0.9; transform: translate3d(var(--x), var(--y), 0) scale(0.85); }
+        100% { opacity: 0; transform: translate3d(var(--x), calc(var(--y) - 14px), 0) scale(1.4); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+        .c44-candle-glow, .c44-candle-trail, .c44-candle-core { display: none !important; }
+        .the_atmosphere, .the_atmosphere *, #c44-atmosphere, #c44-atmosphere * { cursor: auto !important; }
+    }
+    </style>
+        <style id="c44-header-noshrink">
+    /* --- Lock the header at a constant 72px on scroll. ----------------
+       The original cellar44-header-styles.php tries to shrink the bar to
+       56px when .c44-scrolled is on the body, which pushes the
+       logo/menu/button toward the bottom edge — most visibly in Firefox.
+       Target every wrapper between <header> and the widget row via both
+       ID and class selectors, and force the centred geometry.
+    -------------------------------------------------------------------- */
+    .xpro-theme-builder-header,
+    .xpro-theme-builder-header * {
+        transition: none !important;
+    }
+    /* Re-enable transition only for background/shadow on the outer bar. */
+    .xpro-theme-builder-header {
+        transition: background 0.25s ease, box-shadow 0.25s ease !important;
+    }
+    /* Inner container — both ID and class selectors so we never miss. */
+    #c44-header-inner,
+    .xpro-theme-builder-header [class*="c44-header-inner"],
+    .xpro-theme-builder-header #c44-header-inner > .e-con-inner,
+    body.c44-scrolled .xpro-theme-builder-header #c44-header-inner,
+    body.c44-scrolled .xpro-theme-builder-header #c44-header-inner > .e-con-inner {
+        min-height: 72px !important;
+        height: 72px !important;
+        max-height: 72px !important;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        align-content: center !important;
+    }
+    /* Each widget child: vertically centre itself within the row. */
+    #c44-header-inner > .elementor-element,
+    #c44-header-inner > .e-con-inner > .elementor-element,
+    body.c44-scrolled #c44-header-inner > .elementor-element,
+    body.c44-scrolled #c44-header-inner > .e-con-inner > .elementor-element {
+        align-self: center !important;
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
+    /* Also lock the outer bar wrappers so they can't drift either. */
+    #c44-header-bar,
+    .xpro-theme-builder-header [class*="c44-header-bar"] {
+        min-height: 72px !important;
+        height: 72px !important;
+        align-items: center !important;
+    }
+    </style>
+    </head>
+
+<body class="wp-singular page-template-default page page-id-14 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor has-xpro-header xpro-theme-builder-template hello-elementor-default elementor-default elementor-kit-5 elementor-page elementor-page-14">
+	<header class="xpro-theme-builder-header xtb-header-sticky" itemscope="itemscope" itemtype="https://schema.org/WPHeader">
+		<p class="main-title xpro-hidden" itemprop="headline"><a href="/" title="Cellar 44" rel="home">Cellar 44</a></p>
+		<nav class="xpro-theme-builder-header-nav">
+					<div data-elementor-type="xpro-themer" data-elementor-id="22" class="elementor elementor-22 post-14 page type-page status-publish hentry">
+				<div class="elementor-element elementor-element-8a0114f e-con-full e-flex e-con e-parent" data-id="8a0114f" data-element_type="container" data-e-type="container" id="c44-header-bar">
+		<div class="elementor-element elementor-element-381a5e3 e-flex e-con-boxed e-con e-child" data-id="381a5e3" data-element_type="container" data-e-type="container" id="c44-header-inner">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-d4b3a68 elementor-widget elementor-widget-xpro-site-logo" data-id="d4b3a68" data-element_type="widget" data-e-type="widget" data-widget_type="xpro-site-logo.default">
+				<div class="elementor-widget-container">
+					<a href="/">
+	<div class="xpro-site-logo">
+		<img width="300" height="150" src="/wp-content/uploads/2026/06/3-removebg-preview-300x150.png" class="attachment-medium size-medium" alt="" decoding="async" srcset="/wp-content/uploads/2026/06/3-removebg-preview-300x150.png 300w, /wp-content/uploads/2026/06/3-removebg-preview.png 390w" sizes="(max-width: 300px) 100vw, 300px">	</div>
+</a>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-43e9ca9 elementor-align-center elementor-widget elementor-widget-xpro-horizontal-menu" data-id="43e9ca9" data-element_type="widget" data-e-type="widget" data-settings="{&quot;responsive_show&quot;:&quot;tablet&quot;}" data-widget_type="xpro-horizontal-menu.default">
+				<div class="elementor-widget-container">
+					<div class="xpro-elementor-horizontal-navbar-wrapper xpro-elementor-horizontal-menu-responsive-tablet xpro-push-right">
+
+		<button type="button" class="xpro-elementor-horizontal-menu-close">
+		<i aria-hidden="true" class="fas fa-times"></i>	</button>
+	
+	<div class="xpro-elementor-horizontal-navbar xpro-elementor-horizontal-menu-style-fade"><ul id="menu-cellar-44-main-menu" class="xpro-elementor-horizontal-navbar-nav"><li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-16" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-16 nav-item"><a href="/" class="xpro-elementor-nav-link">Home</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-17" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17 nav-item"><a href="/our-story/" class="xpro-elementor-nav-link">Our Story</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-18" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18 nav-item"><a href="/vintages/" class="xpro-elementor-nav-link">Vintages</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-19" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19 nav-item"><a href="/menu/" class="xpro-elementor-nav-link">Menu</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-20" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-14 current_page_item active menu-item-20 nav-item"><a href="/chef-team/" class="xpro-elementor-nav-link" aria-current="page">Chef Team</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-21" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21 nav-item"><a href="/contact-location/" class="xpro-elementor-nav-link">Contact</a></li>
+</ul></div></div>
+
+<div class="xpro-elementor-horizontal-menu-overlay"></div>
+
+<div class="xpro-elementor-horizontal-menu-toggler-wrapper">
+	<button type="button" class="xpro-elementor-horizontal-menu-toggler">
+		<i aria-hidden="true" class="fas fa-bars"></i>	</button>
+</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-07af8e3 elementor-align-right elementor-widget elementor-widget-xpro-button" data-id="07af8e3" data-element_type="widget" data-e-type="widget" data-widget_type="xpro-button.default">
+				<div class="elementor-widget-container">
+					
+<a href="/contact-location/" class="xpro-elementor-button xpro-elementor-button-animation-none xpro-align-icon-right">
+<span class="xpro-elementor-button-inner">
+<span class="xpro-button-text">Reserve</span>
+</span>
+</a>
+				</div>
+				</div>
+					</div>
+				</div>
+				</div>
+				</div>
+				</nav>
+	</header>
+
+	
+<main id="content" class="site-main post-14 page type-page status-publish hentry">
+
+	
+	<div class="page-content">
+				<div data-elementor-type="wp-page" data-elementor-id="14" class="elementor elementor-14">
+				<div class="elementor-element elementor-element-8164b03 e-con-full e-flex e-con e-parent" data-id="8164b03" data-element_type="container" data-e-type="container" id="team-hero" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-cbaf294 e-flex e-con-boxed e-con e-child" data-id="cbaf294" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-570c80f e-con-full e-flex e-con e-child" data-id="570c80f" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-1b982eb elementor-invisible elementor-widget elementor-widget-heading" data-id="1b982eb" data-element_type="widget" data-e-type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:50}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-heading-title elementor-size-default">THE ARCHITECTS OF FLAVOR</div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-087be1e elementor-invisible elementor-widget elementor-widget-heading" data-id="087be1e" data-element_type="widget" data-e-type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:150}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h1 class="elementor-heading-title elementor-size-default">Subterranean Craft</h1>				</div>
+				</div>
+				<div class="elementor-element elementor-element-5719473 elementor-invisible elementor-widget elementor-widget-text-editor" data-id="5719473" data-element_type="widget" data-e-type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:250}" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Beneath the bustling city streets, our team operates in a realm of shadow and precision. Here, the slow maturation of fine wine meets the immediate intensity of the flame.</p>								</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-c2ce196 e-con-full e-flex e-con e-child" data-id="c2ce196" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-dca992b elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="dca992b" data-element_type="widget" data-e-type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+						</div>
+				</div>
+				</div>
+					</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-682ac0b e-con-full e-flex e-con e-parent" data-id="682ac0b" data-element_type="container" data-e-type="container" id="julian" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-2b2ab29 e-flex e-con-boxed e-con e-child" data-id="2b2ab29" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-800de6a e-con-full c44-arch e-flex e-con e-child" data-id="800de6a" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-165a3f0 c44-grayscale elementor-widget elementor-widget-image" data-id="165a3f0" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img fetchpriority="high" decoding="async" width="512" height="512" src="/wp-content/uploads/2026/06/cellar44-julian.png" class="attachment-large size-large wp-image-49" alt="Portrait of Julian Vane" srcset="/wp-content/uploads/2026/06/cellar44-julian.png 512w, /wp-content/uploads/2026/06/cellar44-julian-300x300.png 300w, /wp-content/uploads/2026/06/cellar44-julian-150x150.png 150w" sizes="(max-width: 512px) 100vw, 512px">															</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-972ed33 e-con-full e-flex e-con e-child" data-id="972ed33" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-2a1a830 elementor-widget elementor-widget-heading" data-id="2a1a830" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-heading-title elementor-size-default">EXECUTIVE CHEF</div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-ae5f416 elementor-widget elementor-widget-heading" data-id="ae5f416" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Julian Vane</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-b2f0614 elementor-widget elementor-widget-text-editor" data-id="b2f0614" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>With over two decades spent in the most prestigious kitchens across Europe, Chef Vane brings a philosophy of ‘Elemental Refinement’ to Cellar 44. His approach centers on the transformation of seasonal ingredients through forgotten subterranean techniques—curing, aging, and slow-fire roasting.</p>								</div>
+				</div>
+		<div class="elementor-element elementor-element-e3a3d68 e-con-full c44-chip-row e-flex e-con e-child" data-id="e3a3d68" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-89e9114 c44-chip elementor-widget elementor-widget-heading" data-id="89e9114" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-heading-title elementor-size-default">Forager</div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-5ab38f7 c44-chip elementor-widget elementor-widget-heading" data-id="5ab38f7" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-heading-title elementor-size-default">Alchemist</div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-53da045 c44-chip elementor-widget elementor-widget-heading" data-id="53da045" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-heading-title elementor-size-default">Traditionalist</div>				</div>
+				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-c243071 e-con-full e-flex e-con e-parent" data-id="c243071" data-element_type="container" data-e-type="container" id="elena" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-707e195 e-flex e-con-boxed e-con e-child" data-id="707e195" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-38e7721 e-con-full e-flex e-con e-child" data-id="38e7721" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-0022938 elementor-widget elementor-widget-heading" data-id="0022938" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-heading-title elementor-size-default">MASTER CELLARIST</div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-b7b1302 elementor-widget elementor-widget-heading" data-id="b7b1302" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Elena Moretti</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-457a6e1 elementor-widget elementor-widget-text-editor" data-id="457a6e1" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Elena oversees our collection of over 4,000 vintages, some predating the restaurant by nearly a century. She views the cellar not as storage, but as a living organism. Her curated pairings are designed to resonate with the damp, earthy notes of our subterranean setting.</p>								</div>
+				</div>
+		<div class="elementor-element elementor-element-9cedb94 e-con-full c44-chip-row e-flex e-con e-child" data-id="9cedb94" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-83baab7 c44-chip elementor-widget elementor-widget-heading" data-id="83baab7" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-heading-title elementor-size-default">Sommelier</div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-153b748 c44-chip elementor-widget elementor-widget-heading" data-id="153b748" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-heading-title elementor-size-default">Curator</div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-b18a7d8 c44-chip elementor-widget elementor-widget-heading" data-id="b18a7d8" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-heading-title elementor-size-default">Oenologist</div>				</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-b387a4b e-con-full c44-arch e-flex e-con e-child" data-id="b387a4b" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-6587b1e c44-grayscale elementor-widget elementor-widget-image" data-id="6587b1e" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="512" height="512" src="/wp-content/uploads/2026/06/cellar44-elena.png" class="attachment-large size-large wp-image-50" alt="Portrait of Elena Moretti" srcset="/wp-content/uploads/2026/06/cellar44-elena.png 512w, /wp-content/uploads/2026/06/cellar44-elena-300x300.png 300w, /wp-content/uploads/2026/06/cellar44-elena-150x150.png 150w" sizes="(max-width: 512px) 100vw, 512px">															</div>
+				</div>
+				</div>
+					</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-cecd4bd e-con-full e-flex e-con e-parent" data-id="cecd4bd" data-element_type="container" data-e-type="container" id="ensemble" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-faf2f83 e-flex e-con-boxed e-con e-child" data-id="faf2f83" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-b257f2b elementor-widget elementor-widget-heading" data-id="b257f2b" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h3 class="elementor-heading-title elementor-size-default">The Ensemble</h3>				</div>
+				</div>
+				<div class="elementor-element elementor-element-8eb0bc8 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="8eb0bc8" data-element_type="widget" data-e-type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+						</div>
+				</div>
+		<div class="elementor-element elementor-element-190c603 e-con-full e-flex e-con e-child" data-id="190c603" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-3e40ab6 e-con-full c44-reveal c44-reveal-d100 e-flex e-con e-child" data-id="3e40ab6" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-60fde11 e-con-full c44-round c44-grayscale e-flex e-con e-child" data-id="60fde11" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-7fd57de elementor-widget elementor-widget-image" data-id="7fd57de" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="512" height="512" src="/wp-content/uploads/2026/06/cellar44-marcus.png" class="attachment-medium_large size-medium_large wp-image-51" alt="Portrait of Marcus Reed" srcset="/wp-content/uploads/2026/06/cellar44-marcus.png 512w, /wp-content/uploads/2026/06/cellar44-marcus-300x300.png 300w, /wp-content/uploads/2026/06/cellar44-marcus-150x150.png 150w" sizes="(max-width: 512px) 100vw, 512px">															</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-1cb94ba elementor-widget elementor-widget-heading" data-id="1cb94ba" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-heading-title elementor-size-default">MARCUS REED</div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-d5a1641 elementor-widget elementor-widget-heading" data-id="d5a1641" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-heading-title elementor-size-default">Sous Chef</div>				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-1cca54f e-con-full c44-reveal c44-reveal-d220 e-flex e-con e-child" data-id="1cca54f" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-5c1c1c2 e-con-full c44-round c44-grayscale e-flex e-con e-child" data-id="5c1c1c2" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-13a48c8 elementor-widget elementor-widget-image" data-id="13a48c8" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="512" height="512" src="/wp-content/uploads/2026/06/cellar44-sarah.jpg" class="attachment-medium_large size-medium_large wp-image-52" alt="Portrait of Sarah Chen" srcset="/wp-content/uploads/2026/06/cellar44-sarah.jpg 512w, /wp-content/uploads/2026/06/cellar44-sarah-300x300.jpg 300w, /wp-content/uploads/2026/06/cellar44-sarah-150x150.jpg 150w" sizes="(max-width: 512px) 100vw, 512px">															</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-494243b elementor-widget elementor-widget-heading" data-id="494243b" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-heading-title elementor-size-default">SARAH CHEN</div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-cfdbeed elementor-widget elementor-widget-heading" data-id="cfdbeed" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-heading-title elementor-size-default">Head of Service</div>				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-8d28ea2 e-con-full c44-reveal c44-reveal-d340 e-flex e-con e-child" data-id="8d28ea2" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-92e3695 e-con-full c44-round c44-grayscale e-flex e-con e-child" data-id="92e3695" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-0a0c23a elementor-widget elementor-widget-image" data-id="0a0c23a" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="512" height="512" src="/wp-content/uploads/2026/06/cellar44-leo.png" class="attachment-medium_large size-medium_large wp-image-53" alt="Portrait of Leo Baptiste" srcset="/wp-content/uploads/2026/06/cellar44-leo.png 512w, /wp-content/uploads/2026/06/cellar44-leo-300x300.png 300w, /wp-content/uploads/2026/06/cellar44-leo-150x150.png 150w" sizes="(max-width: 512px) 100vw, 512px">															</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-1221f98 elementor-widget elementor-widget-heading" data-id="1221f98" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-heading-title elementor-size-default">LEO BAPTISTE</div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-546ee1e elementor-widget elementor-widget-heading" data-id="546ee1e" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-heading-title elementor-size-default">Pastry Architect</div>				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-3b4f522 e-con-full c44-reveal c44-reveal-d460 e-flex e-con e-child" data-id="3b4f522" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-33f2a2f e-con-full c44-round c44-grayscale e-flex e-con e-child" data-id="33f2a2f" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-9bd32c0 elementor-widget elementor-widget-image" data-id="9bd32c0" data-element_type="widget" data-e-type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="512" height="512" src="/wp-content/uploads/2026/06/cellar44-anna.png" class="attachment-medium_large size-medium_large wp-image-54" alt="Portrait of Anna Wolfe" srcset="/wp-content/uploads/2026/06/cellar44-anna.png 512w, /wp-content/uploads/2026/06/cellar44-anna-300x300.png 300w, /wp-content/uploads/2026/06/cellar44-anna-150x150.png 150w" sizes="(max-width: 512px) 100vw, 512px">															</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-af47848 elementor-widget elementor-widget-heading" data-id="af47848" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-heading-title elementor-size-default">ANNA WOLFE</div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-6a300cf elementor-widget elementor-widget-heading" data-id="6a300cf" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-heading-title elementor-size-default">Bar Director</div>				</div>
+				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-33c31f7 e-con-full e-flex e-con e-parent" data-id="33c31f7" data-element_type="container" data-e-type="container" id="philosophy" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-f413440 c44-glass e-flex e-con-boxed e-con e-child" data-id="f413440" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-859a840 elementor-view-default elementor-widget elementor-widget-icon" data-id="859a840" data-element_type="widget" data-e-type="widget" data-widget_type="icon.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-wrapper">
+			<div class="elementor-icon">
+			<svg aria-hidden="true" class="e-font-icon-svg e-fas-award" viewbox="0 0 384 512" xmlns="http://www.w3.org/2000/svg"><path d="M97.12 362.63c-8.69-8.69-4.16-6.24-25.12-11.85-9.51-2.55-17.87-7.45-25.43-13.32L1.2 448.7c-4.39 10.77 3.81 22.47 15.43 22.03l52.69-2.01L105.56 507c8 8.44 22.04 5.81 26.43-4.96l52.05-127.62c-10.84 6.04-22.87 9.58-35.31 9.58-19.5 0-37.82-7.59-51.61-21.37zM382.8 448.7l-45.37-111.24c-7.56 5.88-15.92 10.77-25.43 13.32-21.07 5.64-16.45 3.18-25.12 11.85-13.79 13.78-32.12 21.37-51.62 21.37-12.44 0-24.47-3.55-35.31-9.58L252 502.04c4.39 10.77 18.44 13.4 26.43 4.96l36.25-38.28 52.69 2.01c11.62.44 19.82-11.27 15.43-22.03zM263 340c15.28-15.55 17.03-14.21 38.79-20.14 13.89-3.79 24.75-14.84 28.47-28.98 7.48-28.4 5.54-24.97 25.95-45.75 10.17-10.35 14.14-25.44 10.42-39.58-7.47-28.38-7.48-24.42 0-52.83 3.72-14.14-.25-29.23-10.42-39.58-20.41-20.78-18.47-17.36-25.95-45.75-3.72-14.14-14.58-25.19-28.47-28.98-27.88-7.61-24.52-5.62-44.95-26.41-10.17-10.35-25-14.4-38.89-10.61-27.87 7.6-23.98 7.61-51.9 0-13.89-3.79-28.72.25-38.89 10.61-20.41 20.78-17.05 18.8-44.94 26.41-13.89 3.79-24.75 14.84-28.47 28.98-7.47 28.39-5.54 24.97-25.95 45.75-10.17 10.35-14.15 25.44-10.42 39.58 7.47 28.36 7.48 24.4 0 52.82-3.72 14.14.25 29.23 10.42 39.59 20.41 20.78 18.47 17.35 25.95 45.75 3.72 14.14 14.58 25.19 28.47 28.98C104.6 325.96 106.27 325 121 340c13.23 13.47 33.84 15.88 49.74 5.82a39.676 39.676 0 0 1 42.53 0c15.89 10.06 36.5 7.65 49.73-5.82zM97.66 175.96c0-53.03 42.24-96.02 94.34-96.02s94.34 42.99 94.34 96.02-42.24 96.02-94.34 96.02-94.34-42.99-94.34-96.02z"></path></svg>			</div>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-68a6bcc elementor-widget elementor-widget-heading" data-id="68a6bcc" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">“In the depth of the cellar, we find the height of our craft.”</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-e1390f2 elementor-widget elementor-widget-text-editor" data-id="e1390f2" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p><em>Every member of our team is selected not just for their technical mastery, but for their appreciation of the slow, quiet journey from earth to table.</em></p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-98474bb elementor-align-center elementor-widget elementor-widget-button" data-id="98474bb" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-md" href="/contact-location/">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Join the Team</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+					</div>
+				</div>
+				</div>
+				</div>
+		
+		
+			</div>
+
+	
+</main>
+
+		<footer itemtype="https://schema.org/WPFooter" itemscope="itemscope" id="xpro-theme-builder-footer" role="contentinfo">
+				<div data-elementor-type="xpro-themer" data-elementor-id="23" class="elementor elementor-23 post-14 page type-page status-publish hentry">
+				<div class="elementor-element elementor-element-78ce585 e-con-full e-flex e-con e-parent" data-id="78ce585" data-element_type="container" data-e-type="container" id="c44-footer-main" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-4775f1b e-flex e-con-boxed e-con e-child" data-id="4775f1b" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-bc946d3 e-con-full e-flex e-con e-child" data-id="bc946d3" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-8069799 elementor-widget__width-initial elementor-widget elementor-widget-xpro-site-logo" data-id="8069799" data-element_type="widget" data-e-type="widget" data-widget_type="xpro-site-logo.default">
+				<div class="elementor-widget-container">
+					<a href="/">
+	<div class="xpro-site-logo">
+		<img width="390" height="195" src="/wp-content/uploads/2026/06/3-removebg-preview.png" class="attachment-large size-large" alt="" decoding="async" srcset="/wp-content/uploads/2026/06/3-removebg-preview.png 390w, /wp-content/uploads/2026/06/3-removebg-preview-300x150.png 300w" sizes="(max-width: 390px) 100vw, 390px">	</div>
+</a>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-00b5a3c elementor-widget elementor-widget-text-editor" data-id="00b5a3c" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>A subterranean dining room for vintage wine, slow kitchen evenings, and tables that hold their candle until the last pour.</p>								</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-98c1ed8 e-con-full e-flex e-con e-child" data-id="98c1ed8" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-fc3455b elementor-widget elementor-widget-xpro-heading" data-id="fc3455b" data-element_type="widget" data-e-type="widget" data-widget_type="xpro-heading.default">
+				<div class="elementor-widget-container">
+					<div class="xpro-heading-wrapper xpro-simple-heading-wrapper">
+	<div class="xpro-heading-title">VISIT <span class="xpro-title-focus">Us</span> </div></div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-e5541c0 elementor-widget elementor-widget-text-editor" data-id="e5541c0" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>44 Vintner’s Way<br>Old Quarter, Floor B1<br>By appointment after 23:00</p>								</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-1a96405 e-con-full e-flex e-con e-child" data-id="1a96405" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-7723f28 elementor-widget elementor-widget-xpro-heading" data-id="7723f28" data-element_type="widget" data-e-type="widget" data-widget_type="xpro-heading.default">
+				<div class="elementor-widget-container">
+					<div class="xpro-heading-wrapper xpro-simple-heading-wrapper">
+	<div class="xpro-heading-title">Opening <span class="xpro-title-focus">HOURS</span> </div></div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-24b2eac elementor-widget elementor-widget-text-editor" data-id="24b2eac" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Tue — Thu   18:00 – 23:00<br>Fri — Sat   18:00 – 01:00<br>Sun   17:00 – 22:00</p>								</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-32c77e5 e-con-full e-flex e-con e-child" data-id="32c77e5" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-99dcd62 elementor-widget elementor-widget-xpro-heading" data-id="99dcd62" data-element_type="widget" data-e-type="widget" data-widget_type="xpro-heading.default">
+				<div class="elementor-widget-container">
+					<div class="xpro-heading-wrapper xpro-simple-heading-wrapper">
+	<div class="xpro-heading-title">RESERVATIONS </div></div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-31a4d33 elementor-widget elementor-widget-text-editor" data-id="31a4d33" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>reserve@cellar44.example<br>+44 (0) 20 7000 4400<br><a href="/contact-location/" style="color:#ffb4aa;text-decoration:none;border-bottom:1px solid #7a2020;">Book a table →</a></p>								</div>
+				</div>
+				</div>
+					</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-9acaeb1 e-con-full e-flex e-con e-parent" data-id="9acaeb1" data-element_type="container" data-e-type="container" id="c44-footer-bottom" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-5f3ab95 e-flex e-con-boxed e-con e-child" data-id="5f3ab95" data-element_type="container" data-e-type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-973d067 elementor-widget elementor-widget-text-editor" data-id="973d067" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>© 2026 Cellar 44. All vintages catalogued.</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-1c9167a elementor-widget elementor-widget-text-editor" data-id="1c9167a" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Designed in candlelight · Built on Hello Elementor</p>								</div>
+				</div>
+					</div>
+				</div>
+				</div>
+				</div>
+			</footer>
+	<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/hello-elementor/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<link rel="stylesheet" id="hover-css" href="/wp-content/plugins/xpro-elementor-addons/assets/vendor/css/hover.min.css?ver=2.3.2" media="all">
+<script id="xpro-elementor-addons-widgets-js-extra">
+var XproElementorAddons = {"ajax_url":"/wp-admin/admin-ajax.php","nonce":"7b3e87016f"};
+//# sourceURL=xpro-elementor-addons-widgets-js-extra
+</script>
+<script id="xpro-elementor-addons-widgets-js" src="/wp-content/plugins/xpro-elementor-addons/assets/js/xpro-widgets.js?ver=1.7.2"></script>
+<script id="sweetalert2-js" src="/wp-content/plugins/xpro-elementor-addons/assets/vendor/js/sweetalert2.all.min.js?ver=3.0.6"></script>
+<script id="xpro-theme-builder-js" src="/wp-content/plugins/xpro-theme-builder/assets/js/xpro-theme-builder.js?ver=1.2.11"></script>
+<script id="elementor-webpack-runtime-js" src="/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=4.1.1"></script>
+<script id="elementor-frontend-modules-js" src="/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=4.1.1"></script>
+<script id="jquery-ui-core-js" src="/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3"></script>
+<script id="elementor-frontend-js-before">
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"hasCustomBreakpoints":false},"version":"4.1.1","is_static":false,"experimentalFeatures":{"e_font_icon_svg":true,"additional_custom_breakpoints":true,"container":true,"hello-theme-header-footer":true,"e_pro_free_trial_popup":true,"nested-elements":true,"e_atomic_elements":true,"atomic_widgets_should_enforce_capabilities":true,"editor_mcp":true,"e_bc_migrations":true,"e_editor_design_system_panel":true,"e_classes":true,"global_classes_should_enforce_capabilities":true,"e_variables":true,"e_variables_manager":true,"e_opt_in_v4_page":true,"e_opt_in_v4":true,"e_components":true,"e_interactions":true,"e_widget_creation":true,"import-export-customization":true},"urls":{"assets":"\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"\/wp-admin\/admin-ajax.php","uploadUrl":"\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"c9ade877db","atomicFormsSendForm":"85642feb12"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description","hello_header_logo_type":"logo","hello_header_menu_layout":"horizontal","hello_footer_logo_type":"logo"},"post":{"id":14,"title":"Chef%20Team%20%E2%80%93%20Cellar%2044","excerpt":"","featuredImage":false}};
+//# sourceURL=elementor-frontend-js-before
+</script>
+<script id="elementor-frontend-js" src="/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=4.1.1"></script>
+<script id="hello-theme-frontend-js" src="/wp-content/themes/hello-elementor/assets/js/hello-frontend.js?ver=3.4.9"></script>
+<script id="anime-js" src="/wp-content/plugins/xpro-elementor-addons/assets/vendor/js/anime.min.js?ver=3.0.1"></script>
+<script id="xpro-floating-js" src="/wp-content/plugins/xpro-elementor-addons/modules/floating-effect/js/floating-effect.min.js?ver=1.7.2"></script>
+<script id="revealFx-js" src="/wp-content/plugins/xpro-elementor-addons/assets/vendor/js/reveal-fx.js?ver=1.0.0"></script>
+<script id="xpro-reveal-js-js" src="/wp-content/plugins/xpro-elementor-addons/modules/reveal-effect/js/reveal-effect.js?ver=1.7.2"></script>
+<script id="ripples-js" src="/wp-content/plugins/xpro-elementor-addons/assets/vendor/js/jquery.ripples.js?ver=1.0.0"></script>
+<script id="xpro-ripples-js-js" src="/wp-content/plugins/xpro-elementor-addons/modules/ripples-effect/js/ripples-effect.js?ver=1.7.2"></script>
+<script id="soundjs-js" src="/wp-content/plugins/xpro-elementor-addons/assets/vendor/js/soundjs.min.js?ver=1.0.0"></script>
+<script id="xpro-soundjs-js-js" src="/wp-content/plugins/xpro-elementor-addons/modules/sound-effect/js/sound-effect.js?ver=1.7.2"></script>
+<script id="xpro-elementor-widgetarea-editor-js-extra">
+var XproWidgetAreaEditorParams = {"rest_api_url":"/wp-json/","nonce":"7160a8538f"};
+//# sourceURL=xpro-elementor-widgetarea-editor-js-extra
+</script>
+<script id="xpro-elementor-widgetarea-editor-js" src="/wp-content/plugins/xpro-elementor-addons/inc/controls/assets/js/widgetarea-editor.js?ver=1.7.2"></script>
+<script id="wp-emoji-settings" type="application/json">
+{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"/wp-includes/js/wp-emoji-release.min.js?ver=7.0"}}
+</script>
+<script type="module">
+/*! This file is auto-generated */
+const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(window._wpemojiSettings=a,"wpEmojiSettingsSupports"),s=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const a=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===a[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,a){let r;const o=(r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),s=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(e=>{s[e]=t(o,e,n,a)}),s}function r(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}a.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),c.toString(),p.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"});const r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=e=>{i(n=e.data),r.terminate(),t(n)})}catch(e){}i(n=f(s,u,c,p))}t(n)}).then(e=>{for(const n in e)a.supports[n]=e[n],a.supports.everything=a.supports.everything&&a.supports[n],"flag"!==n&&(a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&a.supports[n]);var t;a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&!a.supports.flag,a.supports.everything||((t=a.source||{}).concatemoji?r(t.concatemoji):t.wpemoji&&t.twemoji&&(r(t.twemoji),r(t.wpemoji)))});
+//# sourceURL=/wp-includes/js/wp-emoji-loader.min.js
+</script>
+<script id="c44-parallax-js">
+(function () {
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+    var SPEED_MAP = {
+        'c44-parallax-slow':  0.15,
+        'c44-parallax-mid':   0.30,
+        'c44-parallax-fast':  0.45,
+        'c44-parallax-bg':    0.20
+    };
+    var nodes = [];
+    function collectParallax() {
+        nodes = [];
+        var all = document.querySelectorAll('[class*="c44-parallax"]');
+        Array.prototype.forEach.call(all, function (el) {
+            var speed = null;
+            for (var cls in SPEED_MAP) {
+                if (el.classList.contains(cls)) { speed = SPEED_MAP[cls]; break; }
+            }
+            if (speed === null) {
+                var attr = parseFloat(el.getAttribute('data-c44-speed'));
+                speed = isNaN(attr) ? 0.25 : attr;
+            }
+            var dir = el.classList.contains('c44-parallax-down') ? 1 : -1;
+            nodes.push({ el: el, speed: speed * dir });
+        });
+    }
+
+    var ticking = false;
+    var lastY = 0;
+    function onScroll() {
+        lastY = window.pageYOffset || document.documentElement.scrollTop;
+        if (!ticking) {
+            window.requestAnimationFrame(update);
+            ticking = true;
+        }
+    }
+    function update() {
+        var vpTop = lastY;
+        var vpBot = vpTop + window.innerHeight;
+        for (var i = 0; i < nodes.length; i++) {
+            var n = nodes[i];
+            var rect = n.el.getBoundingClientRect();
+            // Only apply when reasonably near viewport
+            if (rect.bottom < -200 || rect.top > window.innerHeight + 200) continue;
+            // Distance from viewport center (in px) — use that to drive translateY
+            var elCenter = rect.top + rect.height / 2;
+            var vpCenter = window.innerHeight / 2;
+            var delta = (elCenter - vpCenter) * n.speed;
+            n.el.style.transform = 'translate3d(0, ' + delta.toFixed(2) + 'px, 0)';
+        }
+        ticking = false;
+    }
+
+    function initReveal() {
+        var els = document.querySelectorAll('.c44-reveal');
+        if (!('IntersectionObserver' in window)) {
+            Array.prototype.forEach.call(els, function (el) { el.classList.add('c44-revealed'); });
+            return;
+        }
+        var io = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    // Delay comes from explicit data-attr OR a `c44-reveal-d<ms>` class
+                    var delay = parseInt(entry.target.getAttribute('data-c44-reveal-delay') || '0', 10);
+                    if (!delay) {
+                        var cls = entry.target.className || '';
+                        var m = cls.match(/c44-reveal-d(\d+)/);
+                        if (m) delay = parseInt(m[1], 10);
+                    }
+                    if (delay > 0) {
+                        setTimeout(function () { entry.target.classList.add('c44-revealed'); }, delay);
+                    } else {
+                        entry.target.classList.add('c44-revealed');
+                    }
+                    io.unobserve(entry.target);
+                }
+            });
+        }, { rootMargin: '0px 0px -10% 0px', threshold: 0.1 });
+        Array.prototype.forEach.call(els, function (el) { io.observe(el); });
+    }
+
+    // === Arch image mouse parallax ===
+    function initArchHover() {
+        var imgs = document.querySelectorAll('.c44-arch img');
+        Array.prototype.forEach.call(imgs, function (img) {
+            var frame = img.closest('.c44-arch') || img.parentElement;
+            if (!frame) return;
+            frame.addEventListener('mousemove', function (e) {
+                var rect = frame.getBoundingClientRect();
+                var x = (e.clientX - rect.left) / rect.width;
+                var y = (e.clientY - rect.top) / rect.height;
+                img.style.transform = 'scale(1.08) translate(' + ((x - 0.5) * 20).toFixed(2) + 'px,' + ((y - 0.5) * 20).toFixed(2) + 'px)';
+            });
+            frame.addEventListener('mouseleave', function () {
+                img.style.transform = 'scale(1) translate(0, 0)';
+            });
+        });
+    }
+
+    // === Team page (post 14) scroll-linked bg fade ===
+    function initScrollBg() {
+        if (!document.body.classList.contains('page-id-14')) return;
+        var overlay = document.createElement('div');
+        overlay.id = 'c44-scroll-bg-overlay';
+        document.body.appendChild(overlay);
+        function onBg() {
+            var max = document.documentElement.scrollHeight - window.innerHeight;
+            if (max <= 0) return;
+            var frac = Math.max(0, Math.min(1, window.pageYOffset / max));
+            overlay.style.opacity = (frac * 0.85).toFixed(3);
+        }
+        window.addEventListener('scroll', onBg, { passive: true });
+        window.addEventListener('resize', onBg, { passive: true });
+        onBg();
+    }
+
+    function init() {
+        collectParallax();
+        initReveal();
+        initArchHover();
+        initScrollBg();
+        window.addEventListener('scroll', onScroll, { passive: true });
+        window.addEventListener('resize', onScroll, { passive: true });
+        update();
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
+})();
+</script>
+<script>
+(function () {
+    var form = document.getElementById('c44-cta-form');
+    if (!form) return;
+    var btn = document.getElementById('c44-cta-submit');
+    if (btn) {
+        btn.addEventListener('click', function (e) {
+            e.preventDefault();
+            form.requestSubmit ? form.requestSubmit() : form.dispatchEvent(new Event('submit', { cancelable: true }));
+        });
+    }
+    form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var input = form.querySelector('.c44-email-input');
+        var msg = form.querySelector('.c44-email-msg');
+        if (!input.value || !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(input.value)) {
+            msg.textContent = 'Please enter a valid email.';
+            input.focus();
+            return;
+        }
+        var fd = new FormData();
+        fd.append('action', 'c44_join_list');
+        fd.append('email', input.value);
+        fd.append('_nonce', '676b782e1b');
+        msg.textContent = 'Sending…';
+        fetch('/wp-admin/admin-ajax.php', { method: 'POST', body: fd, credentials: 'same-origin' })
+            .then(function (r) { return r.json(); })
+            .then(function (j) {
+                msg.textContent = (j && j.success) ? 'Thank you — we will be in touch.' : 'Something went wrong. Please try again.';
+                if (j && j.success) input.value = '';
+            })
+            .catch(function () { msg.textContent = 'Network error. Please try again.'; });
+    });
+})();
+</script>
+<script>
+(function () {
+    var form = document.getElementById('c44-rsv-form');
+    if (!form) return;
+    var msg = form.parentNode.querySelector('.c44-rsv-msg') || form.nextElementSibling;
+    form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var input = form.querySelector('.c44-rsv-input');
+        if (!input.value) { if (msg) msg.textContent = 'Please pick a date.'; input.focus(); return; }
+        var fd = new FormData();
+        fd.append('action', 'c44_reservation');
+        fd.append('date', input.value);
+        fd.append('_nonce', 'feba94a39a');
+        if (msg) msg.textContent = 'Checking…';
+        fetch('/wp-admin/admin-ajax.php', { method: 'POST', body: fd, credentials: 'same-origin' })
+            .then(function (r) { return r.json(); })
+            .then(function (j) {
+                if (msg) msg.textContent = (j && j.success) ? 'Request received — we will confirm by email.' : 'Could not submit. Please try again.';
+                if (j && j.success) input.value = '';
+            })
+            .catch(function () { if (msg) msg.textContent = 'Network error. Please try again.'; });
+    });
+})();
+</script>
+    <script id="c44-gentle-images-js">
+    (function(){
+        function init(){
+            var section = document.getElementById('c44-atmosphere');
+            if (!section) return;
+            var nodes = section.querySelectorAll('[class*="c44-parallax"]');
+            if (!nodes.length) return;
+            // Stop the global parallax handler from re-applying inline
+            // transforms by clearing any inline style it may have set.
+            Array.prototype.forEach.call(nodes, function(el){
+                el.style.transform = '';
+            });
+            if (!('IntersectionObserver' in window)) {
+                Array.prototype.forEach.call(nodes, function(el){
+                    el.classList.add('c44-gentle-in');
+                });
+                return;
+            }
+            var io = new IntersectionObserver(function(entries){
+                entries.forEach(function(e){
+                    if (e.isIntersecting){
+                        e.target.classList.add('c44-gentle-in');
+                        io.unobserve(e.target);
+                    }
+                });
+            }, { rootMargin: '0px 0px -8% 0px', threshold: 0.12 });
+            Array.prototype.forEach.call(nodes, function(el){ io.observe(el); });
+            // Defensive: the global parallax handler updates transforms on
+            // scroll. Re-clear inline transform every frame for the first
+            // 5 seconds in case it re-applies before our CSS overrides settle.
+            var t0 = performance.now();
+            function tick(){
+                Array.prototype.forEach.call(nodes, function(el){
+                    if (el.style.transform && !el.classList.contains('c44-gentle-in')) {
+                        el.style.transform = '';
+                    }
+                });
+                if (performance.now() - t0 < 5000) requestAnimationFrame(tick);
+            }
+            requestAnimationFrame(tick);
+        }
+        if (document.readyState === 'loading'){
+            document.addEventListener('DOMContentLoaded', init);
+        } else { init(); }
+    })();
+    </script>
+        <script id="c44-candle-cursor-js">
+    (function(){
+        if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+        var SELECTOR = '.the_atmosphere, #c44-atmosphere';
+        var isTouch = window.matchMedia && window.matchMedia('(hover: none), (pointer: coarse)').matches;
+
+        function makeCandle(){
+            var glow = document.createElement('div'); glow.className = 'c44-candle-glow';
+            var core = document.createElement('div'); core.className = 'c44-candle-core';
+            document.body.appendChild(glow);
+            document.body.appendChild(core);
+            return { glow: glow, core: core };
+        }
+        function spawnTrail(x, y){
+            var trail = document.createElement('div');
+            trail.className = 'c44-candle-trail';
+            trail.style.setProperty('--x', x + 'px');
+            trail.style.setProperty('--y', y + 'px');
+            document.body.appendChild(trail);
+            setTimeout(function(){ if (trail.parentNode) trail.parentNode.removeChild(trail); }, 750);
+        }
+
+        function initDesktop(section){
+            var c = makeCandle();
+            var glow = c.glow, core = c.core;
+            var lastX = 0, lastY = 0, inside = false, lastSpawn = 0;
+            var flickerStart = performance.now();
+            function render(){
+                if (inside){
+                    var t = (performance.now() - flickerStart) / 1000;
+                    var s = 1 + Math.sin(t * 6.2) * 0.05 + Math.sin(t * 13.1) * 0.025;
+                    glow.style.transform = 'translate3d(' + lastX + 'px,' + lastY + 'px,0) scale(' + s.toFixed(3) + ')';
+                    core.style.transform = 'translate3d(' + lastX + 'px,' + lastY + 'px,0)';
+                }
+                requestAnimationFrame(render);
+            }
+            requestAnimationFrame(render);
+            document.addEventListener('mousemove', function(e){
+                var inArea = e.target && e.target.closest && e.target.closest(SELECTOR);
+                if (inArea){
+                    if (!inside){ inside = true; glow.classList.add('c44-on'); core.classList.add('c44-on'); }
+                    lastX = e.clientX; lastY = e.clientY;
+                    var now = performance.now();
+                    if (now - lastSpawn > 55){ lastSpawn = now; spawnTrail(lastX, lastY); }
+                } else if (inside){
+                    inside = false;
+                    glow.classList.remove('c44-on');
+                    core.classList.remove('c44-on');
+                }
+            }, { passive: true });
+        }
+
+                function initMobile(section){
+            var c = makeCandle();
+            var glow = c.glow, core = c.core;
+            var lastX = window.innerWidth / 2;
+            var lastY = window.innerHeight / 2;
+            var on = false, lastSpawn = 0, fadeTimer = null;
+            var flickerStart = performance.now();
+
+            function render(){
+                if (on){
+                    var t = (performance.now() - flickerStart) / 1000;
+                    var s = 1 + Math.sin(t * 6.2) * 0.05 + Math.sin(t * 13.1) * 0.025;
+                    glow.style.transform = 'translate3d(' + lastX + 'px,' + lastY + 'px,0) scale(' + s.toFixed(3) + ')';
+                    core.style.transform = 'translate3d(' + lastX + 'px,' + lastY + 'px,0)';
+                }
+                requestAnimationFrame(render);
+            }
+            requestAnimationFrame(render);
+
+            function sectionVisible(){
+                var r = section.getBoundingClientRect();
+                return r.top < window.innerHeight && r.bottom > 0;
+            }
+            function light(){
+                if (on) return;
+                on = true;
+                glow.classList.add('c44-on');
+                core.classList.add('c44-on');
+            }
+            function snuff(){
+                if (!on) return;
+                on = false;
+                glow.classList.remove('c44-on');
+                core.classList.remove('c44-on');
+            }
+            function handleTouch(e){
+                if (!sectionVisible()){ snuff(); return; }
+                var t = e.touches && e.touches[0];
+                if (!t) return;
+                lastX = t.clientX;
+                lastY = t.clientY;
+                light();
+                if (fadeTimer){ clearTimeout(fadeTimer); fadeTimer = null; }
+                var now = performance.now();
+                if (now - lastSpawn > 55){
+                    lastSpawn = now;
+                    spawnTrail(lastX, lastY);
+                }
+            }
+            function handleEnd(){
+                if (fadeTimer) clearTimeout(fadeTimer);
+                fadeTimer = setTimeout(snuff, 650);
+            }
+            document.addEventListener('touchstart', handleTouch, { passive: true });
+            document.addEventListener('touchmove', handleTouch, { passive: true });
+            document.addEventListener('touchend', handleEnd, { passive: true });
+            document.addEventListener('touchcancel', handleEnd, { passive: true });
+            window.addEventListener('scroll', function(){ if (!sectionVisible()) snuff(); }, { passive: true });
+        }
+
+        function init(){
+            var section = document.querySelector(SELECTOR);
+            if (!section) return setTimeout(init, 250);
+            if (isTouch) initMobile(section); else initDesktop(section);
+        }
+        if (document.readyState === 'loading'){
+            document.addEventListener('DOMContentLoaded', init);
+        } else { init(); }
+    })();
+    </script>
+    </body>
+</html>
